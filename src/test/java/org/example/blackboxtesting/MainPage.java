@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.$x;
 
-// page_url = https://www.jetbrains.com/
+
 public class MainPage {
     public SelenideElement seeDeveloperToolsButton = $x("//*[@data-test-marker='Developer Tools']");
     public SelenideElement findYourToolsButton = $x("//*[@data-test='suggestion-link']");
