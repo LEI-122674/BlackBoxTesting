@@ -1,10 +1,12 @@
 package org.example.blackboxtesting;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
+import org.openqa.selenium.By;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -24,23 +26,24 @@ public class MainPageTest {
     @BeforeEach
     public void setUp() {
         open("https://www.jetbrains.com/");
+        if($("button.ch2-allow-all-btn").isDisplayed())
+            $("button.ch2-allow-all-btn").click();
     }
 
     @Test
     public void search() {
+
         mainPage.searchButton.click();
 
-        $("[data-test='search-input']").sendKeys("Selenium");
+        mainPage.searchInput.setValue("Selenium");
+        mainPage.searchInput.shouldBe(Condition.visible).shouldHave(attribute("value", "Selenium"));
         $("button[data-test='full-search-button']").click();
-
-        $("input[data-test='search-input']").shouldHave(attribute("value", "Selenium"));
     }
 
     @Test
     public void toolsMenu() {
         mainPage.toolsMenu.click();
-
-        $("div[data-test='main-submenu']").shouldBe(visible);
+        $("[data-test-marker=\"Developer Tools\"]").shouldBe(Condition.visible);
     }
 
     @Test
