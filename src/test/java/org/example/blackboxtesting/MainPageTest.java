@@ -7,13 +7,10 @@ import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.logevents.SelenideLogger;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebElement;
 
+import static com.codeborne.selenide.Condition.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-import static com.codeborne.selenide.Condition.attribute;
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPageTest {
@@ -36,7 +33,6 @@ public class MainPageTest {
 
     @Test
     public void search() {
-
         mainPage.searchButton.shouldBe(Condition.visible).click();
         SelenideElement searchInputBox =$("[data-test-id='search-input']");
         searchInputBox.shouldBe(visible).setValue("Selenium");
@@ -59,4 +55,5 @@ public class MainPageTest {
 
         assertEquals("All Developer Tools and Products by JetBrains", Selenide.title());
     }
+
 }
