@@ -22,7 +22,7 @@ public class DropdownTest {
     }
 
     @BeforeEach
-    public void setUp(){
+    public void setUp() {
         open("https://intellij-support.jetbrains.com/hc/en-us/requests/new?ticket_form_id=66731");
         $("button.ch2-allow-all-btn")
                 .shouldBe(visible)
