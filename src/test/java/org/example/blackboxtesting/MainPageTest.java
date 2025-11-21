@@ -8,10 +8,9 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.*;
 import org.openqa.selenium.By;
 
+import static com.codeborne.selenide.Condition.*;
 import static org.junit.jupiter.api.Assertions.*;
 
-import static com.codeborne.selenide.Condition.attribute;
-import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.*;
 
 public class MainPageTest {
@@ -55,4 +54,5 @@ public class MainPageTest {
 
         assertEquals("All Developer Tools and Products by JetBrains", Selenide.title());
     }
+
 }
