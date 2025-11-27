@@ -24,9 +24,11 @@ public class DropdownTest {
     @BeforeEach
     public void setUp() {
         open("https://intellij-support.jetbrains.com/hc/en-us/requests/new?ticket_form_id=66731");
-        $("button.ch2-allow-all-btn")
-                .shouldBe(visible)
-                .click();
+        try {
+            $("button.ch2-allow-all-btn").shouldBe(visible).click();
+        } catch (com.codeborne.selenide.ex.ElementNotFound e) {
+            System.out.println("Banner de cookies não apareceu, seguindo...");
+        }
     }
 
     @Test

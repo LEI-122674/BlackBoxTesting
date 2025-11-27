@@ -27,9 +27,10 @@ public class LanguageChangeTest {
     @BeforeEach
     public void setUp() {
         open("https://www.jetbrains.com/");
-        if ($("button.ch2-allow-all-btn").isDisplayed()) {
-            $("button.ch2-allow-all-btn").click();
-            System.out.println("Cookies aceites");
+        try {
+            $("button.ch2-allow-all-btn").shouldBe(visible).click();
+        } catch (com.codeborne.selenide.ex.ElementNotFound e) {
+            System.out.println("Banner de cookies não apareceu, seguindo...");
         }
     }
 

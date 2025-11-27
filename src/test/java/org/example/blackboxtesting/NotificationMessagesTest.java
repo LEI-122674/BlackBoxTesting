@@ -9,6 +9,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import static com.codeborne.selenide.Condition.visible;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 import static java.lang.Thread.sleep;
@@ -24,9 +25,10 @@ public class NotificationMessagesTest {
     @BeforeEach
     public void setUp() {
         open("https://intellij-support.jetbrains.com/hc/en-us/requests/new?ticket_form_id=66731");
-        if ($("button.ch2-allow-all-btn").isDisplayed()) {
-            $("button.ch2-allow-all-btn").click();
-            System.out.println("Cookies aceites");
+        try {
+            $("button.ch2-allow-all-btn").shouldBe(visible).click();
+        } catch (com.codeborne.selenide.ex.ElementNotFound e) {
+            System.out.println("Banner de cookies não apareceu, seguindo...");
         }
     }
 

@@ -25,8 +25,12 @@ public class MainPageTest {
     @BeforeEach
     public void setUp() {
         open("https://www.jetbrains.com/");
-        if($("button.ch2-allow-all-btn").isDisplayed())
-            $("button.ch2-allow-all-btn").click();
+        try {
+            $("button.ch2-allow-all-btn").shouldBe(visible).click();
+        } catch (com.codeborne.selenide.ex.ElementNotFound e) {
+            System.out.println("Banner de cookies não apareceu, seguindo...");
+        }
+
     }
 
     @Test
