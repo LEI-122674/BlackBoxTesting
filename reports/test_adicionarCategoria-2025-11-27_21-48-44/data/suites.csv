@@ -1,0 +1,2 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","8934","testAddNewCategory()","","2025-11-27","passed","2025-11-27","","adicionarCategoria.tests.VaadinBookstoreExampleDemTest","adicionarCategoria.tests.VaadinBookstoreExampleDemTest","testAddNewCategory"
