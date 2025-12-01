@@ -1,0 +1,6 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","3435","testSuccessfulJoinCommunityWithEmail()","","2025-11-27","passed","2025-11-27","","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","testSuccessfulJoinCommunityWithEmail"
+"","12994","testPasswordMismatchValidationError()","","2025-11-27","failed","2025-11-27","","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","testPasswordMismatchValidationError"
+"","7906","testSuccessfulJoinCommunityNotification()","","2025-11-27","passed","2025-11-27","","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","testSuccessfulJoinCommunityNotification"
+"","11272","testPasswordMismatchValidation()","","2025-11-27","failed","2025-11-27","","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","testPasswordMismatchValidation"
+"","105705","testJoinCommunity()","","2025-11-27","passed","2025-11-27","","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","partedacomunidade.tests.VaadinFormExampleDemoVaadTest","testJoinCommunity"
