@@ -1,0 +1,2527 @@
+<html lang="en"><head><custom-style><style>[theme~="dark"] {
+  --lumo-base-color: hsl(214, 35%, 21%);
+
+        
+        --lumo-tint-5pct: hsla(214, 65%, 85%, 0.06);
+        --lumo-tint-10pct: hsla(214, 60%, 80%, 0.14);
+        --lumo-tint-20pct: hsla(214, 64%, 82%, 0.23);
+        --lumo-tint-30pct: hsla(214, 69%, 84%, 0.32);
+        --lumo-tint-40pct: hsla(214, 73%, 86%, 0.41);
+        --lumo-tint-50pct: hsla(214, 78%, 88%, 0.5);
+        --lumo-tint-60pct: hsla(214, 82%, 90%, 0.6);
+        --lumo-tint-70pct: hsla(214, 87%, 92%, 0.7);
+        --lumo-tint-80pct: hsla(214, 91%, 94%, 0.8);
+        --lumo-tint-90pct: hsla(214, 96%, 96%, 0.9);
+        --lumo-tint: hsl(214, 100%, 98%);
+
+        
+        --lumo-shade-5pct: hsla(214, 0%, 0%, 0.07);
+        --lumo-shade-10pct: hsla(214, 4%, 2%, 0.15);
+        --lumo-shade-20pct: hsla(214, 8%, 4%, 0.23);
+        --lumo-shade-30pct: hsla(214, 12%, 6%, 0.32);
+        --lumo-shade-40pct: hsla(214, 16%, 8%, 0.41);
+        --lumo-shade-50pct: hsla(214, 20%, 10%, 0.5);
+        --lumo-shade-60pct: hsla(214, 24%, 12%, 0.6);
+        --lumo-shade-70pct: hsla(214, 28%, 13%, 0.7);
+        --lumo-shade-80pct: hsla(214, 32%, 13%, 0.8);
+        --lumo-shade-90pct: hsla(214, 33%, 13%, 0.9);
+        --lumo-shade: hsl(214, 33%, 13%);
+
+        
+        --lumo-contrast-5pct: var(--lumo-tint-5pct);
+        --lumo-contrast-10pct: var(--lumo-tint-10pct);
+        --lumo-contrast-20pct: var(--lumo-tint-20pct);
+        --lumo-contrast-30pct: var(--lumo-tint-30pct);
+        --lumo-contrast-40pct: var(--lumo-tint-40pct);
+        --lumo-contrast-50pct: var(--lumo-tint-50pct);
+        --lumo-contrast-60pct: var(--lumo-tint-60pct);
+        --lumo-contrast-70pct: var(--lumo-tint-70pct);
+        --lumo-contrast-80pct: var(--lumo-tint-80pct);
+        --lumo-contrast-90pct: var(--lumo-tint-90pct);
+        --lumo-contrast: var(--lumo-tint);
+
+        
+        --lumo-header-text-color: var(--lumo-contrast);
+        --lumo-body-text-color: var(--lumo-contrast-90pct);
+        --lumo-secondary-text-color: var(--lumo-contrast-70pct);
+        --lumo-tertiary-text-color: var(--lumo-contrast-50pct);
+        --lumo-disabled-text-color: var(--lumo-contrast-30pct);
+
+        
+        --lumo-primary-color: hsl(214, 86%, 55%);
+        --lumo-primary-color-50pct: hsla(214, 86%, 55%, 0.5);
+        --lumo-primary-color-10pct: hsla(214, 90%, 63%, 0.1);
+        --lumo-primary-text-color: hsl(214, 100%, 70%);
+        --lumo-primary-contrast-color: #FFF;
+
+        
+        --lumo-error-color: hsl(3, 90%, 63%);
+        --lumo-error-color-50pct: hsla(3, 90%, 63%, 0.5);
+        --lumo-error-color-10pct: hsla(3, 90%, 63%, 0.1);
+        --lumo-error-text-color: hsl(3, 100%, 67%);
+
+        
+        --lumo-success-color: hsl(145, 65%, 42%);
+        --lumo-success-color-50pct: hsla(145, 65%, 42%, 0.5);
+        --lumo-success-color-10pct: hsla(145, 65%, 42%, 0.1);
+        --lumo-success-text-color: hsl(145, 85%, 47%);
+}
+
+html {
+  color: var(--lumo-body-text-color);
+        background-color: var(--lumo-base-color);
+}
+
+[theme~="dark"] {
+  color: var(--lumo-body-text-color);
+        background-color: var(--lumo-base-color);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--lumo-header-text-color);
+}
+
+a {
+  color: var(--lumo-primary-text-color);
+}
+
+blockquote {
+  color: var(--lumo-secondary-text-color);
+}
+
+code, pre {
+  background-color: var(--lumo-contrast-10pct);
+        border-radius: var(--lumo-border-radius-m);
+}
+
+html {
+  font-family: var(--lumo-font-family);
+        font-size: var(--lumo-font-size, var(--lumo-font-size-m));
+        line-height: var(--lumo-line-height-m);
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+
+:host {
+  font-family: var(--lumo-font-family);
+        font-size: var(--lumo-font-size, var(--lumo-font-size-m));
+        line-height: var(--lumo-line-height-m);
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+}
+
+small, [theme~="font-size-s"] {
+  font-size: var(--lumo-font-size-s);
+        line-height: var(--lumo-line-height-s);
+}
+
+[theme~="font-size-xs"] {
+  font-size: var(--lumo-font-size-xs);
+        line-height: var(--lumo-line-height-xs);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+        line-height: var(--lumo-line-height-xs);
+        margin-top: 1.25em;
+}
+
+h1 {
+  font-size: var(--lumo-font-size-xxxl);
+        margin-bottom: 0.75em;
+}
+
+h2 {
+  font-size: var(--lumo-font-size-xxl);
+        margin-bottom: 0.5em;
+}
+
+h3 {
+  font-size: var(--lumo-font-size-xl);
+        margin-bottom: 0.5em;
+}
+
+h4 {
+  font-size: var(--lumo-font-size-l);
+        margin-bottom: 0.5em;
+}
+
+h5 {
+  font-size: var(--lumo-font-size-m);
+        margin-bottom: 0.25em;
+}
+
+h6 {
+  font-size: var(--lumo-font-size-xs);
+        margin-bottom: 0;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+}
+
+p, blockquote {
+  margin-top: 0.5em;
+        margin-bottom: 0.75em;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+hr {
+  display: block;
+        align-self: stretch;
+        height: 1px;
+        border: 0;
+        padding: 0;
+        margin: var(--lumo-space-s) calc(var(--lumo-border-radius-m) / 2);
+        background-color: var(--lumo-contrast-10pct);
+}
+
+blockquote {
+  border-left: 2px solid var(--lumo-contrast-30pct);
+}
+
+b, strong {
+  font-weight: 600;
+}
+
+blockquote[dir="rtl"] {
+  border-left: none;
+        border-right: 2px solid var(--lumo-contrast-30pct);
+}
+
+</style></custom-style><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><base href="."><meta name="viewport" content="width=device-width, initial-scale=1.0"><style type="text/css">body {height:100vh;width:100%;margin:0;}.v-reconnect-dialog, .v-system-error {position: absolute;color: black;background: white;top: 1em;right: 1em;border: 1px solid black;padding: 1em;z-index: 10000;max-width: calc(100vw - 4em);max-height: calc(100vh - 4em);overflow: auto;} .v-system-error {color: red;pointer-events: auto;}</style><script type="text/javascript" src="./VAADIN/build/webcomponentsjs/webcomponents-loader.js"></script><script type="module" src="./VAADIN/build/vaadin-bundle-2b8460fe6211fc0214d3.cache.js" data-app-id="ROOT" crossorigin=""></script><script type="text/javascript" defer="" src="./VAADIN/build/vaadin-bundle.es5-2634f1f003560e99e921.cache.js" nomodule="" data-app-id="ROOT"></script><script type="text/javascript">//<![CDATA[
+(function() {  var apps = {};  var log;  if (typeof console === undefined || !window.location.search.match(/[&?]debug(&|$)/)) {    /* If no console.log present, just use a no-op */    log = function() {};  } else if (typeof console.log === "function") {    /* If it's a function, use it with apply */    log = function() {      console.log.apply(console, arguments);    };  } else {    /* In IE, its a native function for which apply is not defined, but it works     without a proper 'this' reference */    log = console.log;  }    var isInitializedInDom = function(appId) {    var appDiv = document.getElementById(appId);    if (!appDiv) {      return false;    }    for ( var i = 0; i < appDiv.childElementCount; i++) {      var className = appDiv.childNodes[i].className;      /* If the app div contains a child with the class      "v-app-loading" we have only received the HTML      but not yet started the widget set      (UIConnector removes the v-app-loading div). */      if (className && className.indexOf("v-app-loading") != -1) {        return false;      }    }    return true;  };    /*    * Needed for Testbench compatibility, but prevents any Vaadin 7 app from   * bootstrapping unless the legacy vaadinBootstrap.js file is loaded before   * this script.   */  window.Vaadin = window.Vaadin || {};  window.Vaadin.Flow = window.Vaadin.Flow || {};  /*   * Needed for wrapping custom javascript functionality in the components (i.e. connectors)   */  window.Vaadin.Flow.tryCatchWrapper = function(originalFunction, component, repo) {    return function() {      try {        const result = originalFunction.apply(this, arguments);        return result;      } catch (error) {        console.error(            "There seems to be an error in the " + component + ":\n" + error.message + "\n"              + "Please submit an issue to https://github.com/vaadin/" + repo              + "/issues/new!");      }    }  };  if (!window.Vaadin.Flow.clients) {    window.Vaadin.Flow.clients = {};    window.Vaadin.Flow.pendingStartup = {};    window.Vaadin.Flow.initApplication = function(appId, config) {      var testbenchId = appId.replace(/-\d+$/, '');            if (apps[appId]) {        if (window.Vaadin && window.Vaadin.Flow && window.Vaadin.Flow.clients && window.Vaadin.Flow.clients[testbenchId] && window.Vaadin.Flow.clients[testbenchId].initializing) {          throw "Application " + appId + " is already being initialized";        }        if (isInitializedInDom(appId)) {          throw "Application " + appId + " already initialized";        }      }        log("init application", appId, config);            window.Vaadin.Flow.clients[testbenchId] = {          isActive: function() {            return true;          },          initializing: true,          productionMode: mode      };            var getConfig = function(name) {        var value = config[name];        return value;      };            /* Export public data */      var app = {        getConfig: getConfig      };      apps[appId] = app;            if (!window.name) {        window.name =  appId + '-' + Math.random();      }        var widgetset = "client";      if (!window.Vaadin.Flow.pendingStartup[widgetset]) {        window.Vaadin.Flow.pendingStartup[widgetset] = {          pendingApps: []        };      }      if (window.Vaadin.Flow.pendingStartup[widgetset].callback) {        log("Starting from bootstrap", appId);        window.Vaadin.Flow.pendingStartup[widgetset].callback(appId);      } else {        log("Setting pending startup", appId);        window.Vaadin.Flow.pendingStartup[widgetset].pendingApps.push(appId);      }      return app;    };    window.Vaadin.Flow.getAppIds = function() {      var ids = [ ];      for (var id in apps) {        if (apps.hasOwnProperty(id)) {          ids.push(id);        }      }      return ids;    };    window.Vaadin.Flow.getApp = function(appId) {      return apps[appId];    };    window.Vaadin.Flow.registerWidgetset = function(widgetset, callback) {      log("Widgetset registered", widgetset);      if (!window.Vaadin.Flow.pendingStartup[widgetset]) {        window.Vaadin.Flow.pendingStartup[widgetset] = {          pendingApps: [],          callback: callback        };        /* Callback will be invoked when initApp is called */        return;      }      var ws = window.Vaadin.Flow.pendingStartup[widgetset];      if (ws.pendingApps) {        ws.callback = callback;        for (var i = 0; i < ws.pendingApps.length; i++) {          var appId = ws.pendingApps[i];          log("Starting from register widgetset", appId);          callback(appId);        }        ws.pendingApps = null;      }    };    window.Vaadin.Flow.getBrowserDetailsParameters = function() {      var params = {  };      /* Screen height and width */      params['v-sh'] = window.screen.height;      params['v-sw'] = window.screen.width;      /* Browser window dimensions */      params['v-wh'] = window.innerHeight;      params['v-ww'] = window.innerWidth;      /* Body element dimensions */      params['v-bh'] = document.body.clientHeight;      params['v-bw'] = document.body.clientWidth;      /* Current time */      var date = new Date();      params['v-curdate'] = date.getTime();      /* Current timezone offset (including DST shift) */      var tzo1 = date.getTimezoneOffset();      /* Compare the current tz offset with the first offset from the end         of the year that differs --- if less that, we are in DST, otherwise         we are in normal time */      var dstDiff = 0;      var rawTzo = tzo1;      for(var m = 12; m > 0; m--) {        date.setUTCMonth(m);        var tzo2 = date.getTimezoneOffset();        if (tzo1 != tzo2) {          dstDiff = (tzo1 > tzo2 ? tzo1 - tzo2 : tzo2 - tzo1);          rawTzo = (tzo1 > tzo2 ? tzo1 : tzo2);          break;        }      }      /* Time zone offset */      params['v-tzo'] = tzo1;      /* DST difference */      params['v-dstd'] = dstDiff;      /* Time zone offset without DST */      params['v-rtzo'] = rawTzo;      /* DST in effect? */      params['v-dston'] = (tzo1 != rawTzo);      /* Time zone id (if available) */      try {        params['v-tzid'] = Intl.DateTimeFormat().resolvedOptions().timeZone;      } catch (err) {        params['v-tzid'] = '';      }      /* Window name */      if (window.name) {        params['v-wn'] = window.name;      }      /* Detect touch device support */      var supportsTouch = false;      try {        document.createEvent("TouchEvent");        supportsTouch = true;      } catch (e) {        /* Chrome and IE10 touch detection */        supportsTouch = 'ontouchstart' in window          || (typeof navigator.msMaxTouchPoints !== 'undefined');      }      params['v-td'] = supportsTouch;      /* Device Pixel Ratio */      params['v-pr'] = window.devicePixelRatio;      if(navigator.platform) {        params['v-np'] = navigator.platform;      }            /* Stringify each value (they are parsed on the server side) */      Object.keys(params).forEach(function(key) {        var value = params[key];        if (typeof value !== 'undefined') {          params[key] = value.toString();        }      });      return params;    };  }    log('Flow bootstrap loaded');        var uidl = {"syncId":0,"clientId":0,"constants":{"xKJLFGErM5I=":{"}checked":false},"jVRl0dtnFPo=":{"event.detail.error":false,"event.detail":false,"event.detail.file":false},"psi04oxdgUU=":{"element.files":false,"event.detail":false,"event.detail.xhr":false,"event.detail.file":false},"+pEKSzDMd9k=":{"event.detail":false,"event.detail.xhr":false,"event.detail.file":false},"Fg73o1qebBo=":{"}value":false},"F8oCtNArLiI=":{"event.shiftKey":false,"event.metaKey":false,"event.detail":false,"event.ctrlKey":false,"event.clientX":false,"event.clientY":false,"event.altKey":false,"event.button":false,"event.screenY":false,"event.screenX":false},"vIpODLLAUDo=":{}},"changes":[{"node":1,"type":"put","key":"tag","feat":0,"value":"body"},{"node":1,"type":"splice","feat":2,"index":0,"addNodes":[22]},{"node":1,"type":"put","key":"pushUrl","feat":5,"value":"context://vaadinServlet/"},{"node":1,"type":"put","key":"alwaysXhrToServer","feat":5,"value":true},{"node":1,"type":"put","key":"pushMode","feat":5,"value":"DISABLED"},{"node":1,"type":"put","key":"parameters","feat":5,"nodeValue":2},{"node":2,"type":"attach"},{"node":2,"type":"put","key":"fallbackTransport","feat":6,"value":"long-polling"},{"node":2,"type":"put","key":"transport","feat":6,"value":"websocket"},{"node":3,"type":"attach"},{"node":3,"type":"put","key":"tag","feat":0,"value":"vaadin-corner"},{"node":4,"type":"attach"},{"node":4,"type":"put","key":"text","feat":7,"value":"Join the community"},{"node":5,"type":"attach"},{"node":5,"type":"put","key":"tag","feat":0,"value":"vaadin-button"},{"node":5,"type":"clear","feat":2},{"node":5,"type":"splice","feat":2,"index":0,"addNodes":[4]},{"node":5,"type":"put","key":"colspan","feat":3,"value":"2"},{"node":5,"type":"put","key":"theme","feat":3,"value":"primary"},{"node":5,"type":"put","key":"click","feat":4,"value":"F8oCtNArLiI="},{"node":6,"type":"attach"},{"node":6,"type":"put","key":"tag","feat":0,"value":"span"},{"node":6,"type":"put","key":"colspan","feat":3,"value":"2"},{"node":6,"type":"put","key":"padding","feat":12,"value":"15px 0"},{"node":6,"type":"put","key":"color","feat":12,"value":"var(--lumo-error-text-color)"},{"node":7,"type":"attach"},{"node":7,"type":"put","key":"visible","feat":0,"value":false},{"node":7,"type":"put","key":"tag","feat":0,"value":"vaadin-email-field"},{"node":8,"type":"attach"},{"node":8,"type":"put","key":"text","feat":7,"value":"Allow Marketing?"},{"node":9,"type":"attach"},{"node":9,"type":"put","key":"tag","feat":0,"value":"vaadin-checkbox"},{"node":9,"type":"clear","feat":2},{"node":9,"type":"splice","feat":2,"index":0,"addNodes":[8]},{"node":9,"type":"put","key":"indeterminate","feat":1,"value":false},{"node":9,"type":"put","key":"checked","feat":1,"value":false},{"node":9,"type":"put","key":"checked-changed","feat":4,"value":"xKJLFGErM5I="},{"node":9,"type":"splice","feat":13,"index":0,"add":["indeterminate","checked"]},{"node":9,"type":"splice","feat":14,"index":0,"add":["indeterminate-changed","checked-changed"]},{"node":9,"type":"put","key":"padding-top","feat":12,"value":"10px"},{"node":10,"type":"attach"},{"node":10,"type":"put","key":"tag","feat":0,"value":"vaadin-password-field"},{"node":10,"type":"put","key":"invalid","feat":1,"value":false},{"node":10,"type":"put","key":"label","feat":1,"value":"Password again"},{"node":10,"type":"put","key":"value","feat":1,"value":""},{"node":10,"type":"put","key":"change","feat":4,"value":"Fg73o1qebBo="},{"node":11,"type":"attach"},{"node":11,"type":"put","key":"tag","feat":0,"value":"vaadin-password-field"},{"node":11,"type":"put","key":"invalid","feat":1,"value":false},{"node":11,"type":"put","key":"label","feat":1,"value":"Wanted password"},{"node":11,"type":"put","key":"value","feat":1,"value":""},{"node":11,"type":"put","key":"required","feat":1,"value":true},{"node":11,"type":"put","key":"change","feat":4,"value":"Fg73o1qebBo="},{"node":12,"type":"attach"},{"node":12,"type":"put","key":"tag","feat":0,"value":"vaadin-upload"},{"node":12,"type":"put","key":"maxFileSize","feat":1,"value":1048576},{"node":12,"type":"put","key":"maxFiles","feat":1,"value":1},{"node":12,"type":"put","key":"accept","feat":1,"value":"image/*"},{"node":12,"type":"put","key":"target","feat":3,"value":{"uri":"VAADIN/dynamic/resource/0/8736e466-ac84-421c-b2c6-76b143255e39/upload"}},{"node":12,"type":"put","key":"upload-success","feat":4,"value":"psi04oxdgUU="},{"node":12,"type":"put","key":"upload-abort","feat":4,"value":"psi04oxdgUU="},{"node":12,"type":"put","key":"file-reject","feat":4,"value":"jVRl0dtnFPo="},{"node":12,"type":"put","key":"upload-error","feat":4,"value":"psi04oxdgUU="},{"node":12,"type":"put","key":"upload-start","feat":4,"value":"+pEKSzDMd9k="},{"node":12,"type":"splice","feat":13,"index":0,"add":["maxFilesReached","files"]},{"node":12,"type":"splice","feat":14,"index":0,"add":["max-files-reached-changed","files-changed"]},{"node":12,"type":"put","key":"flex-grow","feat":12,"value":"1"},{"node":13,"type":"attach"},{"node":13,"type":"put","key":"visible","feat":0,"value":false},{"node":13,"type":"put","key":"tag","feat":0,"value":"img"},{"node":14,"type":"attach"},{"node":14,"type":"put","key":"tag","feat":0,"value":"div"},{"node":14,"type":"splice","feat":2,"index":0,"addNodes":[13,12]},{"node":14,"type":"put","key":"display","feat":12,"value":"flex"},{"node":15,"type":"attach"},{"node":15,"type":"put","key":"tag","feat":0,"value":"vaadin-custom-field"},{"node":15,"type":"splice","feat":2,"index":0,"addNodes":[14]},{"node":15,"type":"put","key":"invalid","feat":1,"value":false},{"node":15,"type":"put","key":"label","feat":1,"value":"Select Avatar image"},{"node":15,"type":"put","key":"colspan","feat":3,"value":"2"},{"node":15,"type":"put","key":"change","feat":4,"value":"vIpODLLAUDo="},{"node":15,"type":"splice","feat":13,"index":0,"add":["invalid"]},{"node":15,"type":"splice","feat":14,"index":0,"add":["invalid-changed"]},{"node":16,"type":"attach"},{"node":16,"type":"put","key":"tag","feat":0,"value":"vaadin-text-field"},{"node":16,"type":"put","key":"invalid","feat":1,"value":false},{"node":16,"type":"put","key":"label","feat":1,"value":"User handle"},{"node":16,"type":"put","key":"value","feat":1,"value":""},{"node":16,"type":"put","key":"required","feat":1,"value":true},{"node":16,"type":"put","key":"change","feat":4,"value":"Fg73o1qebBo="},{"node":17,"type":"attach"},{"node":17,"type":"put","key":"tag","feat":0,"value":"vaadin-text-field"},{"node":17,"type":"put","key":"invalid","feat":1,"value":false},{"node":17,"type":"put","key":"label","feat":1,"value":"Last name"},{"node":17,"type":"put","key":"value","feat":1,"value":""},{"node":17,"type":"put","key":"required","feat":1,"value":true},{"node":17,"type":"put","key":"change","feat":4,"value":"Fg73o1qebBo="},{"node":18,"type":"attach"},{"node":18,"type":"put","key":"tag","feat":0,"value":"vaadin-text-field"},{"node":18,"type":"put","key":"invalid","feat":1,"value":false},{"node":18,"type":"put","key":"label","feat":1,"value":"First name"},{"node":18,"type":"put","key":"value","feat":1,"value":""},{"node":18,"type":"put","key":"required","feat":1,"value":true},{"node":18,"type":"put","key":"change","feat":4,"value":"Fg73o1qebBo="},{"node":19,"type":"attach"},{"node":19,"type":"put","key":"text","feat":7,"value":"Signup form"},{"node":20,"type":"attach"},{"node":20,"type":"put","key":"tag","feat":0,"value":"h2"},{"node":20,"type":"clear","feat":2},{"node":20,"type":"splice","feat":2,"index":0,"addNodes":[19]},{"node":20,"type":"put","key":"colspan","feat":3,"value":"2"},{"node":21,"type":"attach"},{"node":21,"type":"put","key":"tag","feat":0,"value":"vaadin-form-layout"},{"node":21,"type":"splice","feat":2,"index":0,"addNodes":[20,18,17,16,15,11,10,9,7,6,5]},{"node":21,"type":"put","key":"responsiveSteps","feat":1,"value":[{"minWidth":"0","columns":1,"labelsPosition":"top"},{"minWidth":"490px","columns":2,"labelsPosition":"top"}]},{"node":21,"type":"put","key":"margin","feat":12,"value":"0 auto"},{"node":21,"type":"put","key":"max-width","feat":12,"value":"500px"},{"node":22,"type":"attach"},{"node":22,"type":"put","key":"tag","feat":0,"value":"vaadin-vertical-layout"},{"node":22,"type":"splice","feat":2,"index":0,"addNodes":[21,3]},{"node":22,"type":"put","key":"theme","feat":3,"value":"padding spacing"},{"node":22,"type":"put","key":"width","feat":12,"value":"100%"}],"execute":[[[0,3],[1,[]],"this.registerUpdatableModelProperties($0, $1)"],[[0,3],[1,[]],"this.populateModelProperties($0, $1)"],[[0,7],[2,7,0],[2,7,1],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,7],[2,7,2],[2,7,3],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,10],[2,10,0],[2,10,1],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,10],[2,10,2],[2,10,3],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,11],[2,11,0],[2,11,1],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,11],[2,11,2],[2,11,3],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,16],[2,16,0],[2,16,1],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,16],[2,16,2],[2,16,3],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,17],[2,17,0],[2,17,1],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,17],[2,17,2],[2,17,3],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,18],[2,18,0],[2,18,1],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"],[[0,18],[2,18,2],[2,18,3],"try{Promise.resolve((function(){return (function() { this.validate = function () {return this.checkValidity();}}).apply($0)})()).then($1,function(error){$2(''+error)})}catch(error){$2(''+error)}"]],"Vaadin-Security-Key":"c29928ee-1d09-4430-8021-47b3bbb3d2bd","Vaadin-Push-ID":"7eebfe33-4e50-44fb-b752-f0a53b75bb7d"};  var config = {"frontendUrlEs6":"context://frontend/","frontendUrlEs5":"context://frontend/","sessExpMsg":{"caption":null,"message":null,"url":null},"contextRootUrl":"./","heartbeatInterval":300,"maxMessageSuspendTimeout":5000,"v-uiId":0};  var mode = true;  config.uidl = uidl;  window.Vaadin.Flow.initApplication("ROOT-2521314", config);})();//]]></script><script type="text/javascript" defer="" src="./VAADIN/static/client/client-C4B53966888EAB6CBD0D20BD246409CB.cache.js"></script><custom-style>
+  <style>html {
+  --lumo-base-color: #FFF;
+
+      
+      --lumo-tint-5pct: hsla(0, 0%, 100%, 0.3);
+      --lumo-tint-10pct: hsla(0, 0%, 100%, 0.37);
+      --lumo-tint-20pct: hsla(0, 0%, 100%, 0.44);
+      --lumo-tint-30pct: hsla(0, 0%, 100%, 0.5);
+      --lumo-tint-40pct: hsla(0, 0%, 100%, 0.57);
+      --lumo-tint-50pct: hsla(0, 0%, 100%, 0.64);
+      --lumo-tint-60pct: hsla(0, 0%, 100%, 0.7);
+      --lumo-tint-70pct: hsla(0, 0%, 100%, 0.77);
+      --lumo-tint-80pct: hsla(0, 0%, 100%, 0.84);
+      --lumo-tint-90pct: hsla(0, 0%, 100%, 0.9);
+      --lumo-tint: #FFF;
+
+      
+      --lumo-shade-5pct: hsla(214, 61%, 25%, 0.05);
+      --lumo-shade-10pct: hsla(214, 57%, 24%, 0.1);
+      --lumo-shade-20pct: hsla(214, 53%, 23%, 0.16);
+      --lumo-shade-30pct: hsla(214, 50%, 22%, 0.26);
+      --lumo-shade-40pct: hsla(214, 47%, 21%, 0.38);
+      --lumo-shade-50pct: hsla(214, 45%, 20%, 0.5);
+      --lumo-shade-60pct: hsla(214, 43%, 19%, 0.61);
+      --lumo-shade-70pct: hsla(214, 42%, 18%, 0.72);
+      --lumo-shade-80pct: hsla(214, 41%, 17%, 0.83);
+      --lumo-shade-90pct: hsla(214, 40%, 16%, 0.94);
+      --lumo-shade: hsl(214, 35%, 15%);
+
+      
+      --lumo-contrast-5pct: var(--lumo-shade-5pct);
+      --lumo-contrast-10pct: var(--lumo-shade-10pct);
+      --lumo-contrast-20pct: var(--lumo-shade-20pct);
+      --lumo-contrast-30pct: var(--lumo-shade-30pct);
+      --lumo-contrast-40pct: var(--lumo-shade-40pct);
+      --lumo-contrast-50pct: var(--lumo-shade-50pct);
+      --lumo-contrast-60pct: var(--lumo-shade-60pct);
+      --lumo-contrast-70pct: var(--lumo-shade-70pct);
+      --lumo-contrast-80pct: var(--lumo-shade-80pct);
+      --lumo-contrast-90pct: var(--lumo-shade-90pct);
+      --lumo-contrast: var(--lumo-shade);
+
+      
+      --lumo-header-text-color: var(--lumo-contrast);
+      --lumo-body-text-color: var(--lumo-contrast-90pct);
+      --lumo-secondary-text-color: var(--lumo-contrast-70pct);
+      --lumo-tertiary-text-color: var(--lumo-contrast-50pct);
+      --lumo-disabled-text-color: var(--lumo-contrast-30pct);
+
+      
+      --lumo-primary-color: hsl(214, 90%, 52%);
+      --lumo-primary-color-50pct: hsla(214, 90%, 52%, 0.5);
+      --lumo-primary-color-10pct: hsla(214, 90%, 52%, 0.1);
+      --lumo-primary-text-color: var(--lumo-primary-color);
+      --lumo-primary-contrast-color: #FFF;
+
+      
+      --lumo-error-color: hsl(3, 100%, 61%);
+      --lumo-error-color-50pct: hsla(3, 100%, 60%, 0.5);
+      --lumo-error-color-10pct: hsla(3, 100%, 60%, 0.1);
+      --lumo-error-text-color: hsl(3, 92%, 53%);
+      --lumo-error-contrast-color: #FFF;
+
+      
+      --lumo-success-color: hsl(145, 80%, 42%); 
+      --lumo-success-color-50pct: hsla(145, 76%, 44%, 0.55);
+      --lumo-success-color-10pct: hsla(145, 76%, 44%, 0.12);
+      --lumo-success-text-color: hsl(145, 100%, 32%);
+      --lumo-success-contrast-color: #FFF;
+}
+
+</style>
+</custom-style><dom-module id="lumo-color">
+  <template>
+    
+  </template>
+</dom-module><dom-module id="lumo-color-legacy">
+  <template>
+    <style include="lumo-color">
+      :host {
+        color: var(--lumo-body-text-color) !important;
+        background-color: var(--lumo-base-color) !important;
+      }
+    </style>
+  </template>
+</dom-module><custom-style>
+  <style>html {
+  --lumo-font-family: -apple-system, BlinkMacSystemFont, "Roboto", "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+      
+      --lumo-font-size-xxs: .75rem;
+      --lumo-font-size-xs: .8125rem;
+      --lumo-font-size-s: .875rem;
+      --lumo-font-size-m: 1rem;
+      --lumo-font-size-l: 1.125rem;
+      --lumo-font-size-xl: 1.375rem;
+      --lumo-font-size-xxl: 1.75rem;
+      --lumo-font-size-xxxl: 2.5rem;
+
+      
+      --lumo-line-height-xs: 1.25;
+      --lumo-line-height-s: 1.375;
+      --lumo-line-height-m: 1.625;
+}
+
+</style>
+</custom-style><dom-module id="lumo-typography">
+  <template>
+    
+  </template>
+</dom-module><custom-style>
+  <style>html {
+  --lumo-size-xs: 1.625rem;
+      --lumo-size-s: 1.875rem;
+      --lumo-size-m: 2.25rem;
+      --lumo-size-l: 2.75rem;
+      --lumo-size-xl: 3.5rem;
+
+      
+      --lumo-icon-size-s: 1.25em;
+      --lumo-icon-size-m: 1.5em;
+      --lumo-icon-size-l: 2.25em;
+      
+      --lumo-icon-size: var(--lumo-icon-size-m);
+}
+
+</style>
+</custom-style><custom-style>
+  <style>html {
+  --lumo-space-xs: 0.25rem;
+      --lumo-space-s: 0.5rem;
+      --lumo-space-m: 1rem;
+      --lumo-space-l: 1.5rem;
+      --lumo-space-xl: 2.5rem;
+
+      
+      --lumo-space-wide-xs: calc(var(--lumo-space-xs) / 2) var(--lumo-space-xs);
+      --lumo-space-wide-s: calc(var(--lumo-space-s) / 2) var(--lumo-space-s);
+      --lumo-space-wide-m: calc(var(--lumo-space-m) / 2) var(--lumo-space-m);
+      --lumo-space-wide-l: calc(var(--lumo-space-l) / 2) var(--lumo-space-l);
+      --lumo-space-wide-xl: calc(var(--lumo-space-xl) / 2) var(--lumo-space-xl);
+
+      
+      --lumo-space-tall-xs: var(--lumo-space-xs) calc(var(--lumo-space-xs) / 2);
+      --lumo-space-tall-s: var(--lumo-space-s) calc(var(--lumo-space-s) / 2);
+      --lumo-space-tall-m: var(--lumo-space-m) calc(var(--lumo-space-m) / 2);
+      --lumo-space-tall-l: var(--lumo-space-l) calc(var(--lumo-space-l) / 2);
+      --lumo-space-tall-xl: var(--lumo-space-xl) calc(var(--lumo-space-xl) / 2);
+}
+
+</style>
+</custom-style><custom-style>
+  <style>html {
+  --lumo-border-radius-s: 0.25em; 
+      --lumo-border-radius-m: var(--lumo-border-radius, 0.25em); 
+      --lumo-border-radius-l: 0.5em; 
+      --lumo-border-radius: 0.25em; 
+
+      
+      --lumo-box-shadow-xs: 0 1px 4px -1px var(--lumo-shade-50pct);
+      --lumo-box-shadow-s: 0 2px 4px -1px var(--lumo-shade-20pct), 0 3px 12px -1px var(--lumo-shade-30pct);
+      --lumo-box-shadow-m: 0 2px 6px -1px var(--lumo-shade-20pct), 0 8px 24px -4px var(--lumo-shade-40pct);
+      --lumo-box-shadow-l: 0 3px 18px -2px var(--lumo-shade-20pct), 0 12px 48px -6px var(--lumo-shade-40pct);
+      --lumo-box-shadow-xl: 0 4px 24px -3px var(--lumo-shade-20pct), 0 18px 64px -8px var(--lumo-shade-40pct);
+
+      
+      --lumo-clickable-cursor: default;
+}
+
+</style>
+</custom-style><dom-module id="lumo-button" theme-for="vaadin-button">
+  <template>
+    <style>
+      :host {
+        /* Sizing */
+        --lumo-button-size: var(--lumo-size-m);
+        min-width: calc(var(--lumo-button-size) * 2);
+        height: var(--lumo-button-size);
+        padding: 0 calc(var(--lumo-button-size) / 3 + var(--lumo-border-radius) / 2);
+        margin: var(--lumo-space-xs) 0;
+        box-sizing: border-box;
+        /* Style */
+        font-family: var(--lumo-font-family);
+        font-size: var(--lumo-font-size-m);
+        font-weight: 500;
+        color: var(--_lumo-button-color, var(--lumo-primary-text-color));
+        background-color: var(--_lumo-button-background-color, var(--lumo-contrast-5pct));
+        border-radius: var(--lumo-border-radius);
+        cursor: default;
+        -webkit-tap-highlight-color: transparent;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      /* Set only for the internal parts so we don’t affect the host vertical alignment */
+      [part="label"],
+      [part="prefix"],
+      [part="suffix"] {
+        line-height: var(--lumo-line-height-xs);
+      }
+
+      [part="label"] {
+        padding: calc(var(--lumo-button-size) / 6) 0;
+      }
+
+      :host([theme~="small"]) {
+        font-size: var(--lumo-font-size-s);
+        --lumo-button-size: var(--lumo-size-s);
+      }
+
+      :host([theme~="large"]) {
+        font-size: var(--lumo-font-size-l);
+        --lumo-button-size: var(--lumo-size-l);
+      }
+
+      /* This needs to be the last selector for it to take priority */
+      :host([disabled][disabled]) {
+        pointer-events: none;
+        color: var(--lumo-disabled-text-color);
+        background-color: var(--lumo-contrast-5pct);
+      }
+
+      /* For interaction states */
+      :host::before,
+      :host::after {
+        content: "";
+        /* We rely on the host always being relative */
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-color: currentColor;
+        border-radius: inherit;
+        opacity: 0;
+        transition: opacity 0.2s;
+        pointer-events: none;
+      }
+
+      /* Hover */
+
+      :host(:hover)::before {
+        opacity: 0.05;
+      }
+
+      /* Disable hover for touch devices */
+      @media (pointer: coarse) {
+        :host(:not([active]):hover)::before {
+          opacity: 0;
+        }
+      }
+
+      /* Active */
+
+      :host::after {
+        transition: opacity 1.4s, transform 0.1s;
+        filter: blur(8px);
+      }
+
+      :host([active])::before {
+        opacity: 0.1;
+        transition-duration: 0s;
+      }
+
+      :host([active])::after {
+        opacity: 0.1;
+        transition-duration: 0s, 0s;
+        transform: scale(0);
+      }
+
+      /* Keyboard focus */
+
+      :host([focus-ring]) {
+        box-shadow: 0 0 0 2px var(--lumo-primary-color-50pct);
+      }
+
+      /* Types (primary, tertiary, tertiary-inline */
+
+      :host([theme~="tertiary"]),
+      :host([theme~="tertiary-inline"]) {
+        background-color: transparent !important;
+        transition: opacity 0.2s;
+        min-width: 0;
+      }
+
+      :host([theme~="tertiary"])::before,
+      :host([theme~="tertiary-inline"])::before {
+        display: none;
+      }
+
+      :host([theme~="tertiary"]) {
+        padding: 0 calc(var(--lumo-button-size) / 6);
+      }
+
+      @media (hover: hover) {
+        :host([theme*="tertiary"]:not([active]):hover) {
+          opacity: 0.8;
+        }
+      }
+
+      :host([theme~="tertiary"][active]),
+      :host([theme~="tertiary-inline"][active]) {
+        opacity: 0.5;
+        transition-duration: 0s;
+      }
+
+      :host([theme~="tertiary-inline"]) {
+        margin: 0;
+        height: auto;
+        padding: 0;
+        line-height: inherit;
+        font-size: inherit;
+      }
+
+      :host([theme~="tertiary-inline"]) [part="label"] {
+        padding: 0;
+        overflow: visible;
+        line-height: inherit;
+      }
+
+      :host([theme~="primary"]) {
+        background-color: var(--_lumo-button-primary-background-color, var(--lumo-primary-color));
+        color: var(--_lumo-button-primary-color, var(--lumo-primary-contrast-color));
+        font-weight: 600;
+        min-width: calc(var(--lumo-button-size) * 2.5);
+      }
+
+      :host([theme~="primary"][disabled]) {
+        background-color: var(--lumo-primary-color-50pct);
+        color: var(--lumo-primary-contrast-color);
+      }
+
+      :host([theme~="primary"]:hover)::before {
+        opacity: 0.1;
+      }
+
+      :host([theme~="primary"][active])::before {
+        background-color: var(--lumo-shade-20pct);
+      }
+
+      @media (pointer: coarse) {
+        :host([theme~="primary"][active])::before {
+          background-color: var(--lumo-shade-60pct);
+        }
+
+        :host([theme~="primary"]:not([active]):hover)::before {
+          opacity: 0;
+        }
+      }
+
+      :host([theme~="primary"][active])::after {
+        opacity: 0.2;
+      }
+
+      /* Colors (success, error, contrast) */
+
+      :host([theme~="success"]) {
+        color: var(--lumo-success-text-color);
+      }
+
+      :host([theme~="success"][theme~="primary"]) {
+        background-color: var(--lumo-success-color);
+        color: var(--lumo-success-contrast-color);
+      }
+
+      :host([theme~="success"][theme~="primary"][disabled]) {
+        background-color: var(--lumo-success-color-50pct);
+      }
+
+      :host([theme~="error"]) {
+        color: var(--lumo-error-text-color);
+      }
+
+      :host([theme~="error"][theme~="primary"]) {
+        background-color: var(--lumo-error-color);
+        color: var(--lumo-error-contrast-color);
+      }
+
+      :host([theme~="error"][theme~="primary"][disabled]) {
+        background-color: var(--lumo-error-color-50pct);
+      }
+
+      :host([theme~="contrast"]) {
+        color: var(--lumo-contrast);
+      }
+
+      :host([theme~="contrast"][theme~="primary"]) {
+        background-color: var(--lumo-contrast);
+        color: var(--lumo-base-color);
+      }
+
+      :host([theme~="contrast"][theme~="primary"][disabled]) {
+        background-color: var(--lumo-contrast-50pct);
+      }
+
+      /* Icons */
+
+      [part] ::slotted(iron-icon) {
+        display: inline-block;
+        width: var(--lumo-icon-size-m);
+        height: var(--lumo-icon-size-m);
+      }
+
+      /* Vaadin icons are based on a 16x16 grid (unlike Lumo and Material icons with 24x24), so they look too big by default */
+      [part] ::slotted(iron-icon[icon^="vaadin:"]) {
+        padding: 0.25em;
+        box-sizing: border-box !important;
+      }
+
+      [part="prefix"] {
+        margin-left: -0.25em;
+        margin-right: 0.25em;
+      }
+
+      [part="suffix"] {
+        margin-left: 0.25em;
+        margin-right: -0.25em;
+      }
+
+      /* Icon-only */
+
+      :host([theme~="icon"]:not([theme~="tertiary-inline"])) {
+        min-width: var(--lumo-button-size);
+        padding-left: calc(var(--lumo-button-size) / 4);
+        padding-right: calc(var(--lumo-button-size) / 4);
+      }
+
+      :host([theme~="icon"]) [part="prefix"],
+      :host([theme~="icon"]) [part="suffix"] {
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+      /* RTL specific styles */
+
+      :host([dir="rtl"]) [part="prefix"] {
+        margin-left: 0.25em;
+        margin-right: -0.25em;
+      }
+
+      :host([dir="rtl"]) [part="suffix"] {
+        margin-left: -0.25em;
+        margin-right: 0.25em;
+      }
+
+      :host([dir="rtl"][theme~="icon"]) [part="prefix"],
+      :host([dir="rtl"][theme~="icon"]) [part="suffix"] {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-checkbox" theme-for="vaadin-checkbox">
+  <template>
+    <style include="lumo-checkbox-style lumo-checkbox-effects">
+      /* IE11 only */
+      ::-ms-backdrop,
+      [part="checkbox"] {
+        line-height: 1;
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-checkbox-style">
+  <template>
+    <style>
+      :host {
+        -webkit-tap-highlight-color: transparent;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        cursor: default;
+        outline: none;
+      }
+
+      [part="label"]:not([empty]) {
+        margin: 0.1875em 0.875em 0.1875em 0.375em;
+      }
+
+      [part="checkbox"] {
+        width: calc(1em + 2px);
+        height: calc(1em + 2px);
+        margin: 0.1875em;
+        position: relative;
+        border-radius: var(--lumo-border-radius-s);
+        background-color: var(--lumo-contrast-20pct);
+        transition: transform 0.2s cubic-bezier(.12, .32, .54, 2), background-color 0.15s;
+        pointer-events: none;
+        line-height: 1.2;
+      }
+
+      :host([indeterminate]) [part="checkbox"],
+      :host([checked]) [part="checkbox"] {
+        background-color: var(--lumo-primary-color);
+      }
+
+      /* Needed to align the checkbox nicely on the baseline */
+      [part="checkbox"]::before {
+        content: "\2003";
+      }
+
+      /* Checkmark */
+      [part="checkbox"]::after {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 0;
+        border: 0 solid var(--lumo-primary-contrast-color);
+        border-width: 0.1875em 0 0 0.1875em;
+        box-sizing: border-box;
+        transform-origin: 0 0;
+        position: absolute;
+        top: 0.8125em;
+        left: 0.5em;
+        transform: scale(0.55) rotate(-135deg);
+        opacity: 0;
+      }
+
+      :host([checked]) [part="checkbox"]::after {
+        opacity: 1;
+        width: 0.625em;
+        height: 1.0625em;
+      }
+
+      /* Indeterminate checkmark */
+
+      :host([indeterminate]) [part="checkbox"]::after {
+        transform: none;
+        opacity: 1;
+        top: 45%;
+        height: 10%;
+        left: 22%;
+        right: 22%;
+        width: auto;
+        border: 0;
+        background-color: var(--lumo-primary-contrast-color);
+        transition: opacity 0.25s;
+      }
+
+      /* Focus ring */
+
+      :host([focus-ring]) [part="checkbox"] {
+        box-shadow: 0 0 0 3px var(--lumo-primary-color-50pct);
+      }
+
+      /* Disabled */
+
+      :host([disabled]) {
+        pointer-events: none;
+        color: var(--lumo-disabled-text-color);
+      }
+
+      :host([disabled]) [part="label"] ::slotted(*) {
+        color: inherit;
+      }
+
+      :host([disabled]) [part="checkbox"] {
+        background-color: var(--lumo-contrast-10pct);
+      }
+
+      :host([disabled]) [part="checkbox"]::after {
+        border-color: var(--lumo-contrast-30pct);
+      }
+
+      :host([indeterminate][disabled]) [part="checkbox"]::after {
+        background-color: var(--lumo-contrast-30pct);
+      }
+
+      /* RTL specific styles */
+
+      :host([dir="rtl"]) [part="label"]:not([empty]) {
+        margin: 0.1875em 0.375em 0.1875em 0.875em;
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-checkbox-effects">
+  <template>
+    <style>
+      /* Transition the checkmark if activated with the mouse (disabled for grid select-all this way) */
+      :host(:hover) [part="checkbox"]::after {
+        transition: width 0.1s, height 0.25s;
+      }
+
+      /* Used for activation "halo" */
+      [part="checkbox"]::before {
+        color: transparent;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        background-color: inherit;
+        transform: scale(1.4);
+        opacity: 0;
+        transition: transform 0.1s, opacity 0.8s;
+      }
+
+      /* Hover */
+
+      :host(:not([checked]):not([indeterminate]):not([disabled]):hover) [part="checkbox"] {
+        background-color: var(--lumo-contrast-30pct);
+      }
+
+      /* Disable hover for touch devices */
+      @media (pointer: coarse) {
+        :host(:not([checked]):not([indeterminate]):not([disabled]):hover) [part="checkbox"] {
+          background-color: var(--lumo-contrast-20pct);
+        }
+      }
+
+      /* Active */
+
+      :host([active]) [part="checkbox"] {
+        transform: scale(0.9);
+        transition-duration: 0.05s;
+      }
+
+      :host([active][checked]) [part="checkbox"] {
+        transform: scale(1.1);
+      }
+
+      :host([active]:not([checked])) [part="checkbox"]::before {
+        transition-duration: 0.01s, 0.01s;
+        transform: scale(0);
+        opacity: 0.4;
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-required-field">
+  <template>
+    <style>
+      [part="label"] {
+        align-self: flex-start;
+        color: var(--lumo-secondary-text-color);
+        font-weight: 500;
+        font-size: var(--lumo-font-size-s);
+        margin-left: calc(var(--lumo-border-radius-m) / 4);
+        transition: color 0.2s;
+        line-height: 1;
+        padding-bottom: 0.5em;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        position: relative;
+        max-width: 100%;
+        box-sizing: border-box;
+      }
+
+      :host([has-label])::before {
+        margin-top: calc(var(--lumo-font-size-s) * 1.5);
+      }
+
+      :host([has-label]) {
+        padding-top: var(--lumo-space-m);
+      }
+
+      :host([required]) [part="label"] {
+        padding-right: 1em;
+      }
+
+      [part="label"]::after {
+        content: var(--lumo-required-field-indicator, "•");
+        transition: opacity 0.2s;
+        opacity: 0;
+        color: var(--lumo-primary-text-color);
+        position: absolute;
+        right: 0;
+        width: 1em;
+        text-align: center;
+      }
+
+      :host([required]:not([has-value])) [part="label"]::after {
+        opacity: 1;
+      }
+
+      :host([invalid]) [part="label"]::after {
+        color: var(--lumo-error-text-color);
+      }
+
+      [part="error-message"] {
+        margin-left: calc(var(--lumo-border-radius-m) / 4);
+        font-size: var(--lumo-font-size-xs);
+        line-height: var(--lumo-line-height-xs);
+        color: var(--lumo-error-text-color);
+        will-change: max-height;
+        transition: 0.4s max-height;
+        max-height: 5em;
+      }
+
+      /* Margin that doesn’t reserve space when there’s no error message */
+      [part="error-message"]:not(:empty)::before,
+      [part="error-message"]:not(:empty)::after {
+        content: "";
+        display: block;
+        height: 0.4em;
+      }
+
+      :host(:not([invalid])) [part="error-message"] {
+        max-height: 0;
+        overflow: hidden;
+      }
+
+      /* RTL specific styles */
+
+      :host([dir="rtl"]) [part="label"] {
+        margin-left: 0;
+        margin-right: calc(var(--lumo-border-radius-m) / 4);
+      }
+
+      :host([required][dir="rtl"]) [part="label"] {
+        padding-left: 1em;
+        padding-right: 0;
+      }
+
+      :host([dir="rtl"]) [part="label"]::after {
+        right: auto;
+        left: 0;
+      }
+
+      :host([dir="rtl"]) [part="error-message"] {
+        margin-left: 0;
+        margin-right: calc(var(--lumo-border-radius-m) / 4);
+      }
+
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-custom-field" theme-for="vaadin-custom-field">
+  <template>
+    <style include="lumo-required-field">
+      :host {
+        --lumo-text-field-size: var(--lumo-size-m);
+        color: var(--lumo-body-text-color);
+        font-size: var(--lumo-font-size-m);
+        /* align with text-field height + vertical paddings */
+        line-height: calc(var(--lumo-text-field-size) + 2 * var(--lumo-space-xs));
+        font-family: var(--lumo-font-family);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: transparent;
+        padding: 0;
+      }
+
+      :host::before {
+        margin-top: var(--lumo-space-xs);
+        height: var(--lumo-text-field-size);
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      /* align with text-field label */
+      :host([has-label]) [part="label"] {
+        padding-bottom: calc(0.5em - var(--lumo-space-xs));
+      }
+
+      :host(:not([has-label])) [part="label"],
+      :host(:not([has-label]))::before {
+        display: none;
+      }
+
+      /* align with text-field error message */
+      :host([invalid]) [part="error-message"]:not(:empty)::before {
+        height: calc(0.4em - var(--lumo-space-xs));
+      }
+
+      :host([focused]:not([readonly]):not([disabled])) [part="label"] {
+        color: var(--lumo-primary-text-color);
+      }
+
+      :host(:hover:not([readonly]):not([disabled]):not([focused])) [part="label"],
+      :host(:hover:not([readonly]):not([disabled]):not([focused])) [part="helper-text"],
+      :host(:hover:not([readonly]):not([disabled]):not([focused])) [part="helper-text"] ::slotted(*) {
+        color: var(--lumo-body-text-color);
+      }
+
+      :host([has-helper]) [part="helper-text"]::before {
+        content: "";
+        display: block;
+        height: 0.4em;
+      }
+
+      [part="helper-text"],
+      [part="helper-text"] ::slotted(*) {
+        display: block;
+        color: var(--lumo-secondary-text-color);
+        font-size: var(--lumo-font-size-xs);
+        line-height: var(--lumo-line-height-xs);
+        margin-left: calc(var(--lumo-border-radius-m) / 4);
+        transition: color 0.2s;
+      }
+
+      /* helper-text position */
+
+      :host([has-helper][theme~="helper-above-field"]) [part="helper-text"]::before {
+        display: none;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) [part="helper-text"]::after {
+        content: "";
+        display: block;
+        height: 0.4em;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) [part="label"] {
+        order: 0;
+        padding-bottom: 0.4em;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) [part="helper-text"] {
+        order: 1;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) .inputs-wrapper {
+        order: 2;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) [part="error-message"] {
+        order: 3;
+      }
+
+      /* Touch device adjustment */
+      @media (pointer: coarse) {
+        :host(:hover:not([readonly]):not([disabled]):not([focused])) [part="label"] {
+          color: var(--lumo-secondary-text-color);
+        }
+      }
+
+      /* Disabled style */
+
+      :host([disabled]) [part="label"] {
+        color: var(--lumo-disabled-text-color);
+        -webkit-text-fill-color: var(--lumo-disabled-text-color);
+      }
+
+      /* Small theme */
+
+      :host([theme~="small"]) {
+        font-size: var(--lumo-font-size-s);
+        --lumo-text-field-size: var(--lumo-size-s);
+      }
+
+      :host([theme~="small"][has-label]) [part="label"] {
+        font-size: var(--lumo-font-size-xs);
+      }
+
+      :host([theme~="small"][has-label]) [part="error-message"] {
+        font-size: var(--lumo-font-size-xxs);
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-form-item" theme-for="vaadin-form-item">
+  <template>
+    <style>
+      :host {
+        --vaadin-form-item-row-spacing: 0;
+      }
+
+      /* font-weight, margin-bottom, transition and line-height same values as for part label in text-field */
+      [part="label"] {
+        color: var(--lumo-secondary-text-color);
+        font-family: var(--lumo-font-family);
+        font-size: var(--lumo-font-size-s);
+        font-weight: 500;
+        margin-top: var(--lumo-space-m);
+        margin-left: calc(var(--lumo-border-radius) / 4);
+        margin-bottom: var(--lumo-space-xs);
+        transition: color 0.4s;
+        line-height: 1.333;
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-form-layout" theme-for="vaadin-form-layout">
+  <template>
+    <style>
+      :host {
+        --vaadin-form-layout-column-spacing: var(--lumo-space-l);
+      }
+    </style>
+  </template>
+</dom-module>
+<custom-style>
+  <style is="custom-style">[hidden] {
+  display: none !important;
+}
+
+</style>
+</custom-style>
+<custom-style>
+  <style is="custom-style">html {
+  --layout_-_display:  flex;;
+
+      --layout-inline_-_display:  inline-flex;;
+
+      --layout-horizontal_-_display:  var(--layout_-_display); --layout-horizontal_-_-ms-flex-direction:  row; --layout-horizontal_-_-webkit-flex-direction:  row; --layout-horizontal_-_flex-direction:  row;;
+
+      --layout-horizontal-reverse_-_display:  var(--layout_-_display); --layout-horizontal-reverse_-_-ms-flex-direction:  row-reverse; --layout-horizontal-reverse_-_-webkit-flex-direction:  row-reverse; --layout-horizontal-reverse_-_flex-direction:  row-reverse;;
+
+      --layout-vertical_-_display:  var(--layout_-_display); --layout-vertical_-_-ms-flex-direction:  column; --layout-vertical_-_-webkit-flex-direction:  column; --layout-vertical_-_flex-direction:  column;;
+
+      --layout-vertical-reverse_-_display:  var(--layout_-_display); --layout-vertical-reverse_-_-ms-flex-direction:  column-reverse; --layout-vertical-reverse_-_-webkit-flex-direction:  column-reverse; --layout-vertical-reverse_-_flex-direction:  column-reverse;;
+
+      --layout-wrap_-_-ms-flex-wrap:  wrap; --layout-wrap_-_-webkit-flex-wrap:  wrap; --layout-wrap_-_flex-wrap:  wrap;;
+
+      --layout-wrap-reverse_-_-ms-flex-wrap:  wrap-reverse; --layout-wrap-reverse_-_-webkit-flex-wrap:  wrap-reverse; --layout-wrap-reverse_-_flex-wrap:  wrap-reverse;;
+
+      --layout-flex-auto_-_-ms-flex:  1 1 auto; --layout-flex-auto_-_-webkit-flex:  1 1 auto; --layout-flex-auto_-_flex:  1 1 auto;;
+
+      --layout-flex-none_-_-ms-flex:  none; --layout-flex-none_-_-webkit-flex:  none; --layout-flex-none_-_flex:  none;;
+
+      --layout-flex_-_-ms-flex:  1 1 0.000000001px; --layout-flex_-_-webkit-flex:  1; --layout-flex_-_flex:  1; --layout-flex_-_-webkit-flex-basis:  0.000000001px; --layout-flex_-_flex-basis:  0.000000001px;;
+
+      --layout-flex-2_-_-ms-flex:  2; --layout-flex-2_-_-webkit-flex:  2; --layout-flex-2_-_flex:  2;;
+
+      --layout-flex-3_-_-ms-flex:  3; --layout-flex-3_-_-webkit-flex:  3; --layout-flex-3_-_flex:  3;;
+
+      --layout-flex-4_-_-ms-flex:  4; --layout-flex-4_-_-webkit-flex:  4; --layout-flex-4_-_flex:  4;;
+
+      --layout-flex-5_-_-ms-flex:  5; --layout-flex-5_-_-webkit-flex:  5; --layout-flex-5_-_flex:  5;;
+
+      --layout-flex-6_-_-ms-flex:  6; --layout-flex-6_-_-webkit-flex:  6; --layout-flex-6_-_flex:  6;;
+
+      --layout-flex-7_-_-ms-flex:  7; --layout-flex-7_-_-webkit-flex:  7; --layout-flex-7_-_flex:  7;;
+
+      --layout-flex-8_-_-ms-flex:  8; --layout-flex-8_-_-webkit-flex:  8; --layout-flex-8_-_flex:  8;;
+
+      --layout-flex-9_-_-ms-flex:  9; --layout-flex-9_-_-webkit-flex:  9; --layout-flex-9_-_flex:  9;;
+
+      --layout-flex-10_-_-ms-flex:  10; --layout-flex-10_-_-webkit-flex:  10; --layout-flex-10_-_flex:  10;;
+
+      --layout-flex-11_-_-ms-flex:  11; --layout-flex-11_-_-webkit-flex:  11; --layout-flex-11_-_flex:  11;;
+
+      --layout-flex-12_-_-ms-flex:  12; --layout-flex-12_-_-webkit-flex:  12; --layout-flex-12_-_flex:  12;;
+
+      
+
+      --layout-start_-_-ms-flex-align:  start; --layout-start_-_-webkit-align-items:  flex-start; --layout-start_-_align-items:  flex-start;;
+
+      --layout-center_-_-ms-flex-align:  center; --layout-center_-_-webkit-align-items:  center; --layout-center_-_align-items:  center;;
+
+      --layout-end_-_-ms-flex-align:  end; --layout-end_-_-webkit-align-items:  flex-end; --layout-end_-_align-items:  flex-end;;
+
+      --layout-baseline_-_-ms-flex-align:  baseline; --layout-baseline_-_-webkit-align-items:  baseline; --layout-baseline_-_align-items:  baseline;;
+
+      
+
+      --layout-start-justified_-_-ms-flex-pack:  start; --layout-start-justified_-_-webkit-justify-content:  flex-start; --layout-start-justified_-_justify-content:  flex-start;;
+
+      --layout-center-justified_-_-ms-flex-pack:  center; --layout-center-justified_-_-webkit-justify-content:  center; --layout-center-justified_-_justify-content:  center;;
+
+      --layout-end-justified_-_-ms-flex-pack:  end; --layout-end-justified_-_-webkit-justify-content:  flex-end; --layout-end-justified_-_justify-content:  flex-end;;
+
+      --layout-around-justified_-_-ms-flex-pack:  distribute; --layout-around-justified_-_-webkit-justify-content:  space-around; --layout-around-justified_-_justify-content:  space-around;;
+
+      --layout-justified_-_-ms-flex-pack:  justify; --layout-justified_-_-webkit-justify-content:  space-between; --layout-justified_-_justify-content:  space-between;;
+
+      --layout-center-center_-_-ms-flex-align:  var(--layout-center_-_-ms-flex-align); --layout-center-center_-_-webkit-align-items:  var(--layout-center_-_-webkit-align-items); --layout-center-center_-_align-items:  var(--layout-center_-_align-items); --layout-center-center_-_-ms-flex-pack:  var(--layout-center-justified_-_-ms-flex-pack); --layout-center-center_-_-webkit-justify-content:  var(--layout-center-justified_-_-webkit-justify-content); --layout-center-center_-_justify-content:  var(--layout-center-justified_-_justify-content);;
+
+      
+
+      --layout-self-start_-_-ms-align-self:  flex-start; --layout-self-start_-_-webkit-align-self:  flex-start; --layout-self-start_-_align-self:  flex-start;;
+
+      --layout-self-center_-_-ms-align-self:  center; --layout-self-center_-_-webkit-align-self:  center; --layout-self-center_-_align-self:  center;;
+
+      --layout-self-end_-_-ms-align-self:  flex-end; --layout-self-end_-_-webkit-align-self:  flex-end; --layout-self-end_-_align-self:  flex-end;;
+
+      --layout-self-stretch_-_-ms-align-self:  stretch; --layout-self-stretch_-_-webkit-align-self:  stretch; --layout-self-stretch_-_align-self:  stretch;;
+
+      --layout-self-baseline_-_-ms-align-self:  baseline; --layout-self-baseline_-_-webkit-align-self:  baseline; --layout-self-baseline_-_align-self:  baseline;;
+
+      
+
+      --layout-start-aligned_-_-ms-flex-line-pack:  start; --layout-start-aligned_-_-ms-align-content:  flex-start; --layout-start-aligned_-_-webkit-align-content:  flex-start; --layout-start-aligned_-_align-content:  flex-start;;
+
+      --layout-end-aligned_-_-ms-flex-line-pack:  end; --layout-end-aligned_-_-ms-align-content:  flex-end; --layout-end-aligned_-_-webkit-align-content:  flex-end; --layout-end-aligned_-_align-content:  flex-end;;
+
+      --layout-center-aligned_-_-ms-flex-line-pack:  center; --layout-center-aligned_-_-ms-align-content:  center; --layout-center-aligned_-_-webkit-align-content:  center; --layout-center-aligned_-_align-content:  center;;
+
+      --layout-between-aligned_-_-ms-flex-line-pack:  justify; --layout-between-aligned_-_-ms-align-content:  space-between; --layout-between-aligned_-_-webkit-align-content:  space-between; --layout-between-aligned_-_align-content:  space-between;;
+
+      --layout-around-aligned_-_-ms-flex-line-pack:  distribute; --layout-around-aligned_-_-ms-align-content:  space-around; --layout-around-aligned_-_-webkit-align-content:  space-around; --layout-around-aligned_-_align-content:  space-around;;
+
+      
+
+      --layout-block_-_display:  block;;
+
+      --layout-invisible_-_visibility:  hidden !important;;
+
+      --layout-relative_-_position:  relative;;
+
+      --layout-fit_-_position:  absolute; --layout-fit_-_top:  0; --layout-fit_-_right:  0; --layout-fit_-_bottom:  0; --layout-fit_-_left:  0;;
+
+      --layout-scroll_-_-webkit-overflow-scrolling:  touch; --layout-scroll_-_overflow:  auto;;
+
+      --layout-fullbleed_-_margin:  0; --layout-fullbleed_-_height:  100vh;;
+
+      
+
+      --layout-fixed-top_-_position:  fixed; --layout-fixed-top_-_top:  0; --layout-fixed-top_-_left:  0; --layout-fixed-top_-_right:  0;;
+
+      --layout-fixed-right_-_position:  fixed; --layout-fixed-right_-_top:  0; --layout-fixed-right_-_right:  0; --layout-fixed-right_-_bottom:  0;;
+
+      --layout-fixed-bottom_-_position:  fixed; --layout-fixed-bottom_-_right:  0; --layout-fixed-bottom_-_bottom:  0; --layout-fixed-bottom_-_left:  0;;
+
+      --layout-fixed-left_-_position:  fixed; --layout-fixed-left_-_top:  0; --layout-fixed-left_-_bottom:  0; --layout-fixed-left_-_left:  0;;
+}
+
+</style>
+</custom-style><style>[hidden] { display: none !important; }</style><iron-iconset-svg size="1000" name="lumo" style="display: none;">
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+<g id="angle-down"><path d="M283 391c-18-16-46-15-63 4-16 18-15 46 3 63l244 224c17 15 43 15 60 0l250-229c18-16 20-45 3-63-16-18-45-20-63-4l-220 203-214-198z"></path></g>
+<g id="angle-left"><path d="M601 710c16 18 15 46-3 63-18 16-46 15-63-4l-224-244c-15-17-15-43 0-59l229-250c16-18 45-20 63-4 18 16 20 45 3 63l-203 220 198 215z"></path></g>
+<g id="angle-right"><path d="M399 275c-16-18-15-46 3-63 18-16 46-15 63 4l224 244c15 17 15 43 0 59l-229 250c-16 18-45 20-63 4-18-16-20-45-3-63l203-220-198-215z"></path></g>
+<g id="angle-up"><path d="M283 635c-18 16-46 15-63-3-16-18-15-46 3-63l244-224c17-15 43-15 60 0l250 229c18 16 20 45 3 63-16 18-45 20-63 3l-220-202L283 635z"></path></g>
+<g id="arrow-down"><path d="M538 646l125-112c15-14 39-12 53 4 14 15 12 39-4 53l-187 166c0 0 0 0 0 0-14 13-36 12-50 0l-187-166c-15-14-17-37-4-53 14-15 37-17 53-4L462 646V312c0-21 17-38 38-37s38 17 37 37v334z"></path></g>
+<g id="arrow-left"><path d="M375 538l111 125c14 15 12 39-3 53-15 14-39 12-53-4l-166-187c0 0 0 0 0 0-13-14-12-36 0-50l166-187c14-15 37-17 53-4 15 14 17 37 3 53L375 463h333c21 0 38 17 38 37 0 21-17 38-38 38h-333z"></path></g>
+<g id="arrow-right"><path d="M625 538h-333c-21 0-38-17-38-38 0-21 17-38 38-37h333l-111-126c-14-15-12-39 3-53 15-14 39-12 53 4l166 187c13 14 13 36 0 50 0 0 0 0 0 0l-166 187c-14 15-37 17-53 4-15-14-17-37-3-53l111-125z"></path></g>
+<g id="arrow-up"><path d="M538 354V688c0 21-17 38-38 37s-38-17-38-38V354l-125 112c-15 14-39 12-53-4-14-15-12-39 4-53l187-166c14-13 36-13 50 0 0 0 0 0 0 0l187 166c15 14 17 37 4 53-14 15-37 17-53 4L538 354z"></path></g>
+<g id="bar-chart"><path d="M175 500h108c28 0 50 22 50 50v233c0 28-22 50-50 50H175c-28 0-50-22-50-50v-233c0-28 22-50 50-50z m33 67c-9 0-17 7-16 16v167c0 9 7 17 16 17h42c9 0 17-7 17-17v-167c0-9-7-17-17-16H208zM446 167h108c28 0 50 22 50 50v566c0 28-22 50-50 50h-108c-28 0-50-22-50-50V217c0-28 22-50 50-50z m33 66c-9 0-17 7-17 17v500c0 9 7 17 17 17h42c9 0 17-7 16-17V250c0-9-7-17-16-17h-42zM717 333h108c28 0 50 22 50 50v400c0 28-22 50-50 50h-108c-28 0-50-22-50-50V383c0-28 22-50 50-50z m33 67c-9 0-17 7-17 17v333c0 9 7 17 17 17h42c9 0 17-7 16-17v-333c0-9-7-17-16-17h-42z"></path></g>
+<g id="bell"><path d="M367 675H292v-258C292 325 366 250 459 250H458V208c0-23 18-42 42-41 23 0 42 18 42 41v42h-1C634 250 708 325 708 417V675h-75v-258c0-51-41-92-91-92h-84C408 325 367 366 367 417V675z m-159 37c0-21 17-38 38-37h508c21 0 37 17 38 37 0 21-17 38-38 38H246C225 750 208 733 208 713z m230 71h125v32c0 17-14 31-32 31h-62c-17 0-32-14-31-31v-32z"></path></g>
+<g id="calendar"><path d="M375 208h250v-20C625 176 634 167 646 167h41C699 167 708 176 708 188V208h74c23 0 41 19 41 42v42C823 315 804 333 782 333H218C196 333 177 315 177 292V250C177 227 196 208 218 208H292v-20C292 176 301 167 313 167h41C366 167 375 176 375 188V208zM229 375h42C283 375 292 384 292 396v41C292 449 282 458 271 458h-42C217 458 208 449 208 437v-41C208 384 218 375 229 375z m125 0h42C408 375 417 384 417 396v41C417 449 407 458 396 458h-42C342 458 333 449 333 437v-41C333 384 343 375 354 375z m125 0h42C533 375 542 384 542 396v41C542 449 532 458 521 458h-42C467 458 458 449 458 437v-41C458 384 468 375 479 375z m-250 125h42C283 500 292 509 292 521v41C292 574 282 583 271 583h-42C217 583 208 574 208 562v-41C208 509 218 500 229 500z m125 0h42C408 500 417 509 417 521v41C417 574 407 583 396 583h-42C342 583 333 574 333 562v-41C333 509 343 500 354 500z m125 0h42c12 0 21 9 21 21v41C542 574 532 583 521 583h-42C467 583 458 574 458 562v-41C458 509 468 500 479 500z m-250 125h42C283 625 292 634 292 646v41C292 699 282 708 271 708h-42C217 708 208 699 208 687v-41C208 634 218 625 229 625z m125 0h42C408 625 417 634 417 646v41C417 699 407 708 396 708h-42C342 708 333 699 333 687v-41C333 634 343 625 354 625z m125 0h42c12 0 21 9 21 21v41C542 699 532 708 521 708h-42C467 708 458 699 458 687v-41C458 634 468 625 479 625z m125-250h42C658 375 667 384 667 396v41C667 449 657 458 646 458h-42C592 458 583 449 583 437v-41C583 384 593 375 604 375z m0 125h42c12 0 21 9 21 21v41C667 574 657 583 646 583h-42C592 583 583 574 583 562v-41C583 509 593 500 604 500z m0 125h42c12 0 21 9 21 21v41C667 699 657 708 646 708h-42C592 708 583 699 583 687v-41C583 634 593 625 604 625z m125 0h42c12 0 21 9 21 21v41C792 699 782 708 771 708h-42C717 708 708 699 708 687v-41C708 634 718 625 729 625z m-500 125h42C283 750 292 759 292 771v41C292 824 282 833 271 833h-42C217 833 208 824 208 812v-41C208 759 218 750 229 750z m125 0h42C408 750 417 759 417 771v41C417 824 407 833 396 833h-42C342 833 333 824 333 812v-41C333 759 343 750 354 750z m125 0h42c12 0 21 9 21 21v41C542 824 532 833 521 833h-42C467 833 458 824 458 812v-41C458 759 468 750 479 750z m125 0h42c12 0 21 9 21 21v41C667 824 657 833 646 833h-42C592 833 583 824 583 812v-41C583 759 593 750 604 750z m125 0h42c12 0 21 9 21 21v41C792 824 782 833 771 833h-42C717 833 708 824 708 812v-41C708 759 718 750 729 750z m0-250h42c12 0 21 9 21 21v41C792 574 782 583 771 583h-42C717 583 708 574 708 562v-41C708 509 718 500 729 500z m0-125h42C783 375 792 384 792 396v41C792 449 782 458 771 458h-42C717 458 708 449 708 437v-41C708 384 718 375 729 375z"></path></g>
+<g id="checkmark"><path d="M318 493c-15-15-38-15-53 0-15 15-15 38 0 53l136 136c15 15 38 15 53 0l323-322c15-15 15-38 0-53-15-15-38-15-54 0l-295 296-110-110z"></path></g>
+<g id="chevron-down"><path d="M533 654l210-199c9-9 9-23 0-32C739 419 733 417 726 417H274C261 417 250 427 250 439c0 6 2 12 7 16l210 199c18 17 48 17 66 0z"></path></g>
+<g id="chevron-left"><path d="M346 533l199 210c9 9 23 9 32 0 4-4 7-10 6-17V274C583 261 573 250 561 250c-6 0-12 2-16 7l-199 210c-17 18-17 48 0 66z"></path></g>
+<g id="chevron-right"><path d="M654 533L455 743c-9 9-23 9-32 0C419 739 417 733 417 726V274C417 261 427 250 439 250c6 0 12 2 16 7l199 210c17 18 17 48 0 66z"></path></g>
+<g id="chevron-up"><path d="M533 346l210 199c9 9 9 23 0 32-4 4-10 7-17 6H274C261 583 250 573 250 561c0-6 2-12 7-16l210-199c18-17 48-17 66 0z"></path></g>
+<g id="clock"><path d="M538 489l85 85c15 15 15 38 0 53-15 15-38 15-53 0l-93-93a38 38 0 0 1-2-2C467 525 462 515 462 504V308c0-21 17-38 38-37 21 0 38 17 37 37v181zM500 833c-184 0-333-149-333-333s149-333 333-333 333 149 333 333-149 333-333 333z m0-68c146 0 265-118 265-265 0-146-118-265-265-265-146 0-265 118-265 265 0 146 118 265 265 265z"></path></g>
+<g id="cog"><path d="M833 458l-81-18c-8-25-17-50-29-75L767 292 708 233l-72 49c-21-12-46-25-75-30L542 167h-84l-19 79c-25 8-50 17-71 30L296 233 233 296l47 69c-12 21-21 46-29 71L167 458v84l84 25c8 25 17 50 29 75L233 708 292 767l76-44c21 12 46 25 75 29L458 833h84l19-81c25-8 50-17 75-29L708 767l59-59-44-66c12-21 25-46 29-75L833 542v-84z m-333 217c-96 0-175-79-175-175 0-96 79-175 175-175 96 0 175 79 175 175 0 96-79 175-175 175z"></path></g>
+<g id="cross"><path d="M445 500l-142-141c-15-15-15-40 0-56 15-15 40-15 56 0L500 445l141-142c15-15 40-15 56 0 15 15 15 40 0 56L555 500l142 141c15 15 15 40 0 56-15 15-40 15-56 0L500 555l-141 142c-15 15-40 15-56 0-15-15-15-40 0-56L445 500z"></path></g>
+<g id="download"><path d="M538 521l125-112c15-14 39-12 53 4 14 15 12 39-4 53l-187 166a38 38 0 0 1 0 0c-14 13-36 12-50 0l-187-166c-15-14-17-37-4-53 14-15 37-17 53-4L462 521V188c0-21 17-38 38-38s38 17 37 38v333zM758 704c0-21 17-38 38-37 21 0 38 17 37 37v92c0 21-17 38-37 37H204c-21 0-38-17-37-37v-92c0-21 17-38 37-37s38 17 38 37v54h516v-54z"></path></g>
+<g id="dropdown"><path d="M317 393c-15-14-39-13-53 3-14 15-13 39 3 53l206 189c14 13 36 13 50 0l210-193c15-14 17-38 3-53-14-15-38-17-53-3l-185 171L317 393z"></path></g>
+<g id="edit"><path d="M673 281l62 56-205 233c-9 10-38 24-85 39a8 8 0 0 1-5 0c-4-1-7-6-6-10l0 0c14-47 25-76 35-86l204-232z m37-42l52-59c15-17 41-18 58-2 17 16 18 42 3 59L772 295l-62-56zM626 208l-67 75h-226C305 283 283 306 283 333v334C283 695 306 717 333 717h334c28 0 50-22 50-50v-185L792 398v269C792 736 736 792 667 792H333C264 792 208 736 208 667V333C208 264 264 208 333 208h293z"></path></g>
+<g id="error"><path d="M500 833c-184 0-333-149-333-333s149-333 333-333 333 149 333 333-149 333-333 333z m0-68c146 0 265-118 265-265 0-146-118-265-265-265-146 0-265 118-265 265 0 146 118 265 265 265zM479 292h42c12 0 21 9 20 20l-11 217c0 8-6 13-13 13h-34c-7 0-13-6-13-13l-11-217C459 301 468 292 479 292zM483 608h34c12 0 21 9 20 21v33c0 12-9 21-20 21h-34c-12 0-21-9-21-21v-33c0-12 9-21 21-21z"></path></g>
+<g id="eye-disabled"><path d="M396 735l60-60c15 2 30 3 44 3 89 0 178-34 258-90 31-22 59-46 78-69 6-7 12-14 16-19-4-6-9-12-16-19-20-22-47-46-78-69-8-5-15-11-23-15l50-51C862 397 917 458 917 500c0 87-230 250-417 250-34 0-69-5-104-15zM215 654C138 603 83 542 83 500c0-87 230-250 417-250 34 0 69 5 104 15l-59 60c-15-2-30-3-45-3-89 0-178 34-258 90-31 22-59 46-78 69-6 7-12 14-16 19 4 6 9 12 16 19 20 22 47 46 78 69 8 5 16 11 24 16L215 654z m271-9l159-159c0 5 1 9 1 14 0 81-65 146-146 146-5 0-9 0-14-1z m-131-131C354 510 354 505 354 500c0-81 65-146 146-146 5 0 10 0 14 1l-159 159z m-167 257L780 179c12-12 32-12 44 0 12 12 12 32 0 44L232 815c-12 12-32 12-44 0s-12-32 0-44z"></path></g>
+<g id="eye"><path d="M500 750c-187 0-417-163-417-250s230-250 417-250 417 163 417 250-230 250-417 250z m-336-231c20 22 47 46 78 69C322 644 411 678 500 678s178-34 258-90c31-22 59-46 78-69 6-7 12-14 16-19-4-6-9-12-16-19-20-22-47-46-78-69C678 356 589 322 500 322s-178 34-258 90c-31 22-59 46-78 69-6 7-12 14-16 19 4 6 9 12 16 19zM500 646c-81 0-146-65-146-146s65-146 146-146 146 65 146 146-65 146-146 146z m0-75c39 0 71-32 71-71 0-39-32-71-71-71-39 0-71 32-71 71 0 39 32 71 71 71z"></path></g>
+<g id="menu"><path d="M167 292c0-23 19-42 41-42h584C815 250 833 268 833 292c0 23-19 42-41 41H208C185 333 167 315 167 292z m0 208c0-23 19-42 41-42h584C815 458 833 477 833 500c0 23-19 42-41 42H208C185 542 167 523 167 500z m0 208c0-23 19-42 41-41h584C815 667 833 685 833 708c0 23-19 42-41 42H208C185 750 167 732 167 708z"></path></g>
+<g id="minus"><path d="M261 461c-22 0-39 18-39 39 0 22 18 39 39 39h478c22 0 39-18 39-39 0-22-18-39-39-39H261z"></path></g>
+<g id="ordered-list"><path d="M138 333V198H136l-43 28v-38l45-31h45V333H138z m-61 128c0-35 27-59 68-59 39 0 66 21 66 53 0 20-11 37-43 64l-29 27v2h74V583H80v-30l55-52c26-24 32-33 33-43 0-13-10-22-24-22-15 0-26 10-26 25v1h-41v-1zM123 759v-31h21c15 0 25-8 25-21 0-13-10-21-25-21-15 0-26 9-26 23h-41c1-34 27-56 68-57 39 0 66 20 66 49 0 20-14 36-33 39v3c24 3 40 19 39 41 0 32-30 54-73 54-41 0-69-22-70-57h43c1 13 11 22 28 22 16 0 27-9 27-22 0-14-10-22-28-22h-21zM333 258c0-18 15-33 34-33h516c18 0 33 15 34 33 0 18-15 33-34 34H367c-18 0-33-15-34-34z m0 250c0-18 15-33 34-33h516c18 0 33 15 34 33s-15 33-34 34H367c-18 0-33-15-34-34z m0 250c0-18 15-33 34-33h516c18 0 33 15 34 33s-15 33-34 34H367c-18 0-33-15-34-34z"></path></g>
+<g id="phone"><path d="M296 208l42-37c17-15 44-13 58 4a42 42 0 0 1 5 7L459 282c12 20 5 45-15 57l-7 4c-17 10-25 30-19 48l20 66a420 420 0 0 0 93 157l41 45c13 14 35 17 51 8l7-5c20-12 45-5 57 16L745 777c12 20 5 45-15 57a42 42 0 0 1-8 4l-52 17c-61 21-129 4-174-43l-50-52c-81-85-141-189-175-302l-24-78c-19-62 0-129 49-172z"></path></g>
+<g id="photo"><path d="M208 167h584c69 0 125 56 125 125v416c0 69-56 125-125 125H208c-69 0-125-56-125-125V292c0-69 56-125 125-125z m584 75H208c-28 0-50 22-50 50v416c0 28 22 50 50 50h584c28 0 50-22 50-50V292c0-28-22-50-50-50zM239 740l167-167c12-12 31-14 45-6l73 43 172-201c13-15 34-18 50-7l95 67v92l-111-78-169 199c-12 14-32 17-47 8l-76-43-111 111H229c2-7 5-13 10-18zM458 427C458 490 407 542 344 542S229 490 229 427c0-63 51-115 115-115S458 364 458 427z m-62 0C396 398 373 375 344 375S292 398 292 427c0 29 23 52 52 52s52-23 52-52z"></path></g>
+<g id="play"><path d="M689 528l-298 175c-13 8-34 8-48 0-6-4-10-9-10-14V311C333 300 348 292 367 292c9 0 17 2 24 5l298 175c26 15 26 40 0 56z"></path></g>
+<g id="plus"><path d="M461 461H261c-22 0-39 18-39 39 0 22 18 39 39 39h200v200c0 22 18 39 39 39 22 0 39-18 39-39v-200h200c22 0 39-18 39-39 0-22-18-39-39-39h-200V261c0-22-18-39-39-39-22 0-39 18-39 39v200z"></path></g>
+<g id="redo"><path d="M290 614C312 523 393 458 491 458c55 0 106 22 144 57l-88 88c-3 3-5 7-5 11 0 8 6 15 15 15l193-5c17 0 31-15 31-32l5-192c0-4-1-8-4-11-6-6-16-6-22 0l-66 67C641 406 570 375 491 375c-136 0-248 90-281 215-1 2-1 5-1 8-8 44 45 68 73 32 4-5 7-11 8-16z"></path></g>
+<g id="reload"><path d="M500 233V137c0-9 7-16 15-16 4 0 8 2 10 4l133 140c12 12 12 32 0 45l-133 140c-6 6-15 6-21 0C502 447 500 443 500 438V308c-117 0-212 95-212 213 0 117 95 212 212 212 117 0 212-95 212-212 0-21 17-38 38-38s38 17 37 38c0 159-129 288-287 287-159 0-288-129-288-287 0-159 129-288 288-288z"></path></g>
+<g id="search"><path d="M662 603l131 131c16 16 16 42 0 59-16 16-43 16-59 0l-131-131C562 691 512 708 458 708c-138 0-250-112-250-250 0-138 112-250 250-250 138 0 250 112 250 250 0 54-17 104-46 145zM458 646c104 0 188-84 188-188S562 271 458 271 271 355 271 458s84 188 187 188z"></path></g>
+<g id="undo"><path d="M710 614C688 523 607 458 509 458c-55 0-106 22-144 57l88 88c3 3 5 7 5 11 0 8-6 15-15 15l-193-5c-17 0-31-15-31-32L214 400c0-4 1-8 4-11 6-6 16-6 22 0l66 67C359 406 430 375 509 375c136 0 248 90 281 215 1 2 1 5 1 8 8 44-45 68-73 32-4-5-7-11-8-16z"></path></g>
+<g id="unordered-list"><path d="M146 325c-42 0-67-26-67-63 0-37 25-63 67-63 42 0 67 26 67 63 0 37-25 63-67 63z m0 250c-42 0-67-26-67-63 0-37 25-63 67-63 42 0 67 26 67 63 0 37-25 63-67 63z m0 250c-42 0-67-26-67-63 0-37 25-63 67-63 42 0 67 26 67 63 0 37-25 63-67 63zM333 258c0-18 15-33 34-33h516c18 0 33 15 34 33 0 18-15 33-34 34H367c-18 0-33-15-34-34z m0 250c0-18 15-33 34-33h516c18 0 33 15 34 33s-15 33-34 34H367c-18 0-33-15-34-34z m0 250c0-18 15-33 34-33h516c18 0 33 15 34 33s-15 33-34 34H367c-18 0-33-15-34-34z"></path></g>
+<g id="upload"><path d="M454 271V604c0 21-17 38-37 38s-38-17-38-38V271L254 382c-15 14-39 12-53-3-14-15-12-39 3-53L391 160c14-13 36-13 51-1 0 0 0 0 0 1l187 166c15 14 17 37 3 53-14 15-37 17-53 3L454 271zM675 704c0-21 17-38 37-37 21 0 38 17 38 37v92c0 21-17 38-38 37H121c-21 0-38-17-38-37v-92c0-21 17-38 38-37s38 17 37 37v54h517v-54z"></path></g>
+<g id="user"><path d="M500 500c-69 0-125-56-125-125s56-125 125-125 125 56 125 125-56 125-125 125z m-292 292c0-115 131-208 292-209s292 93 292 209H208z"></path></g>
+</defs>
+</svg>
+</iron-iconset-svg><dom-module id="lumo-notification-card" theme-for="vaadin-notification-card">
+  <template>
+    <style>
+      :host {
+        position: relative;
+        margin: var(--lumo-space-s);
+      }
+
+      [part="overlay"] {
+        background: var(--lumo-base-color) linear-gradient(var(--lumo-contrast-5pct), var(--lumo-contrast-5pct));
+        border-radius: var(--lumo-border-radius);
+        box-shadow: 0 0 0 1px var(--lumo-contrast-10pct), var(--lumo-box-shadow-l);
+        font-family: var(--lumo-font-family);
+        font-size: var(--lumo-font-size-m);
+        font-weight: 400;
+        line-height: var(--lumo-line-height-s);
+        letter-spacing: 0;
+        text-transform: none;
+        -webkit-text-size-adjust: 100%;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      [part="content"] {
+        padding: var(--lumo-space-wide-l);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      [part="content"] ::slotted(vaadin-button) {
+        flex: none;
+        margin: 0 calc(var(--lumo-space-s) * -1) 0 var(--lumo-space-m);
+      }
+
+      :host([slot^="middle"]) {
+        width: 20em;
+        max-width: 80vw;
+        margin: var(--lumo-space-s) auto;
+      }
+
+      :host([slot$="stretch"]) {
+        margin: 0;
+      }
+
+      :host([slot$="stretch"]) [part="overlay"] {
+        border-radius: 0;
+      }
+
+      @media (min-width: 421px) {
+        :host(:not([slot$="stretch"])) {
+          display: flex;
+        }
+
+        :host([slot$="end"]) {
+          justify-content: flex-end;
+        }
+
+        :host([slot^="middle"]),
+        :host([slot$="center"]) {
+          display: flex;
+          justify-content: center;
+        }
+      }
+
+      @keyframes lumo-notification-exit-fade-out {
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes lumo-notification-enter-fade-in {
+        0% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes lumo-notification-enter-slide-down {
+        0% {
+          transform: translateY(-200%);
+          opacity: 0;
+        }
+      }
+
+      @keyframes lumo-notification-exit-slide-up {
+        100% {
+          transform: translateY(-200%);
+          opacity: 0;
+        }
+      }
+
+      @keyframes lumo-notification-enter-slide-up {
+        0% {
+          transform: translateY(200%);
+          opacity: 0;
+        }
+      }
+
+      @keyframes lumo-notification-exit-slide-down {
+        100% {
+          transform: translateY(200%);
+          opacity: 0;
+        }
+      }
+
+      :host([slot="middle"][opening]) {
+        animation: lumo-notification-enter-fade-in 300ms;
+      }
+
+      :host([slot="middle"][closing]) {
+        animation: lumo-notification-exit-fade-out 300ms;
+      }
+
+      :host([slot^="top"][opening]) {
+        animation: lumo-notification-enter-slide-down 300ms;
+      }
+
+      :host([slot^="top"][closing]) {
+        animation: lumo-notification-exit-slide-up 300ms;
+      }
+
+      :host([slot^="bottom"][opening]) {
+        animation: lumo-notification-enter-slide-up 300ms;
+      }
+
+      :host([slot^="bottom"][closing]) {
+        animation: lumo-notification-exit-slide-down 300ms;
+      }
+
+      :host([theme~="primary"]) [part="overlay"] {
+        background: var(--lumo-primary-color);
+        color: var(--lumo-primary-contrast-color);
+      }
+
+      :host([theme~="primary"]) {
+        --_lumo-button-background-color: var(--lumo-shade-20pct);
+        --_lumo-button-color: var(--lumo-primary-contrast-color);
+        --_lumo-button-primary-background-color: var(--lumo-primary-contrast-color);
+        --_lumo-button-primary-color: var(--lumo-primary-text-color);
+      }
+
+      :host([theme~="contrast"]) [part="overlay"] {
+        background: var(--lumo-contrast);
+        color: var(--lumo-base-color);
+      }
+
+      :host([theme~="contrast"]) {
+        --_lumo-button-background-color: var(--lumo-contrast-20pct);
+        --_lumo-button-color: var(--lumo-base-color);
+        --_lumo-button-primary-background-color: var(--lumo-base-color);
+        --_lumo-button-primary-color: var(--lumo-contrast);
+      }
+
+      :host([theme~="success"]) [part="overlay"] {
+        background: var(--lumo-success-color);
+        color: var(--lumo-success-contrast-color);
+      }
+
+      :host([theme~="success"]) {
+        --_lumo-button-background-color: var(--lumo-shade-20pct);
+        --_lumo-button-color: var(--lumo-success-contrast-color);
+        --_lumo-button-primary-background-color: var(--lumo-success-contrast-color);
+        --_lumo-button-primary-color: var(--lumo-success-text-color);
+      }
+
+      :host([theme~="error"]) [part="overlay"] {
+        background: var(--lumo-error-color);
+        color: var(--lumo-error-contrast-color);
+      }
+
+      :host([theme~="error"]) {
+        --_lumo-button-background-color: var(--lumo-shade-20pct);
+        --_lumo-button-color: var(--lumo-error-contrast-color);
+        --_lumo-button-primary-background-color: var(--lumo-error-contrast-color);
+        --_lumo-button-primary-color: var(--lumo-error-text-color);
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-ordered-layout">
+  <template>
+    <style>
+      :host([theme~="margin"]) {
+        margin: var(--lumo-space-m);
+      }
+
+      :host([theme~="padding"]) {
+        padding: var(--lumo-space-m);
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-vertical-layout" theme-for="vaadin-vertical-layout">
+  <template>
+    <style include="lumo-ordered-layout">
+      :host([theme~="spacing-xs"]) ::slotted(*) {
+        margin-top: var(--lumo-space-xs);
+      }
+
+      :host([theme~="spacing-s"]) ::slotted(*) {
+        margin-top: var(--lumo-space-s);
+      }
+
+      :host([theme~="spacing"]) ::slotted(*) {
+        margin-top: var(--lumo-space-m);
+      }
+
+      :host([theme~="spacing-l"]) ::slotted(*) {
+        margin-top: var(--lumo-space-l);
+      }
+
+      :host([theme~="spacing-xl"]) ::slotted(*) {
+        margin-top: var(--lumo-space-xl);
+      }
+
+      /*
+        Compensate for the first item margin, so that there is no gap around
+        the layout itself.
+       */
+       :host([theme~="spacing-xs"])::before {
+         content: "";
+         margin-top: calc(var(--lumo-space-xs) * -1);
+       }
+
+       :host([theme~="spacing-s"])::before {
+         content: "";
+         margin-top: calc(var(--lumo-space-s) * -1);
+       }
+
+      :host([theme~="spacing"])::before {
+        content: "";
+        margin-top: calc(var(--lumo-space-m) * -1);
+      }
+
+      :host([theme~="spacing-l"])::before {
+        content: "";
+        margin-top: calc(var(--lumo-space-l) * -1);
+      }
+
+      :host([theme~="spacing-xl"])::before {
+        content: "";
+        margin-top: calc(var(--lumo-space-xl) * -1);
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-email-field" theme-for="vaadin-email-field">
+  <template>
+    <style>
+      :not(*):placeholder-shown, /* to prevent broken styles on IE */
+      :host([dir="rtl"]) [part="value"]:placeholder-shown,
+      :host([dir="rtl"]) [part="input-field"] ::slotted(input:placeholder-shown) {
+        --_lumo-text-field-overflow-mask-image: none;
+      }
+
+      :host([dir="rtl"]) [part="value"],
+      :host([dir="rtl"]) [part="input-field"] ::slotted(input) {
+        --_lumo-text-field-overflow-mask-image: linear-gradient(to left, transparent, #000 1.25em);
+      }
+    </style>
+  </template>
+</dom-module><custom-style>
+  <style>@font-face {
+  font-family: 'lumo-icons';
+      src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
+      font-weight: normal;
+      font-style: normal;
+}
+
+html {
+  --lumo-icons-align-center: "\ea01";
+      --lumo-icons-align-left: "\ea02";
+      --lumo-icons-align-right: "\ea03";
+      --lumo-icons-angle-down: "\ea04";
+      --lumo-icons-angle-left: "\ea05";
+      --lumo-icons-angle-right: "\ea06";
+      --lumo-icons-angle-up: "\ea07";
+      --lumo-icons-arrow-down: "\ea08";
+      --lumo-icons-arrow-left: "\ea09";
+      --lumo-icons-arrow-right: "\ea0a";
+      --lumo-icons-arrow-up: "\ea0b";
+      --lumo-icons-bar-chart: "\ea0c";
+      --lumo-icons-bell: "\ea0d";
+      --lumo-icons-calendar: "\ea0e";
+      --lumo-icons-checkmark: "\ea0f";
+      --lumo-icons-chevron-down: "\ea10";
+      --lumo-icons-chevron-left: "\ea11";
+      --lumo-icons-chevron-right: "\ea12";
+      --lumo-icons-chevron-up: "\ea13";
+      --lumo-icons-clock: "\ea14";
+      --lumo-icons-cog: "\ea15";
+      --lumo-icons-cross: "\ea16";
+      --lumo-icons-download: "\ea17";
+      --lumo-icons-dropdown: "\ea18";
+      --lumo-icons-edit: "\ea19";
+      --lumo-icons-error: "\ea1a";
+      --lumo-icons-eye: "\ea1b";
+      --lumo-icons-eye-disabled: "\ea1c";
+      --lumo-icons-menu: "\ea1d";
+      --lumo-icons-minus: "\ea1e";
+      --lumo-icons-ordered-list: "\ea1f";
+      --lumo-icons-phone: "\ea20";
+      --lumo-icons-photo: "\ea21";
+      --lumo-icons-play: "\ea22";
+      --lumo-icons-plus: "\ea23";
+      --lumo-icons-redo: "\ea24";
+      --lumo-icons-reload: "\ea25";
+      --lumo-icons-search: "\ea26";
+      --lumo-icons-undo: "\ea27";
+      --lumo-icons-unordered-list: "\ea28";
+      --lumo-icons-upload: "\ea29";
+      --lumo-icons-user: "\ea2a";
+}
+
+</style>
+</custom-style><dom-module id="lumo-field-button">
+  <template>
+    <style>
+      [part$="button"] {
+        flex: none;
+        width: 1em;
+        height: 1em;
+        line-height: 1;
+        font-size: var(--lumo-icon-size-m);
+        text-align: center;
+        color: var(--lumo-contrast-60pct);
+        transition: 0.2s color;
+        cursor: var(--lumo-clickable-cursor);
+      }
+
+      :host(:not([readonly])) [part$="button"]:hover {
+        color: var(--lumo-contrast-90pct);
+      }
+
+      :host([disabled]) [part$="button"],
+      :host([readonly]) [part$="button"] {
+        color: var(--lumo-contrast-20pct);
+      }
+
+      [part$="button"]::before {
+        font-family: "lumo-icons";
+        display: block;
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-text-field" theme-for="vaadin-text-field">
+  <template>
+    <style include="lumo-required-field lumo-field-button">
+      :host {
+        --lumo-text-field-size: var(--lumo-size-m);
+        color: var(--lumo-body-text-color);
+        font-size: var(--lumo-font-size-m);
+        font-family: var(--lumo-font-family);
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-tap-highlight-color: transparent;
+        padding: var(--lumo-space-xs) 0;
+      }
+
+      :host::before {
+        height: var(--lumo-text-field-size);
+        box-sizing: border-box;
+        display: inline-flex;
+        align-items: center;
+      }
+
+      :host([focused]:not([readonly])) [part="label"] {
+        color: var(--lumo-primary-text-color);
+      }
+
+      :host([has-helper]) [part="helper-text"]::before {
+        content: "";
+        display: block;
+        height: 0.4em;
+      }
+
+      [part="helper-text"],
+      [part="helper-text"] ::slotted(*) {
+        display: block;
+        color: var(--lumo-secondary-text-color);
+        font-size: var(--lumo-font-size-xs);
+        line-height: var(--lumo-line-height-xs);
+        margin-left: calc(var(--lumo-border-radius-m) / 4);
+        transition: color 0.2s;
+      }
+
+      [part="value"],
+      [part="input-field"] ::slotted(input),
+      [part="input-field"] ::slotted(textarea),
+      /* Slotted by vaadin-select-text-field */
+      [part="input-field"] ::slotted([part="value"]) {
+        cursor: inherit;
+        min-height: var(--lumo-text-field-size);
+        padding: 0 0.25em;
+        --_lumo-text-field-overflow-mask-image: linear-gradient(to left, transparent, #000 1.25em);
+        -webkit-mask-image: var(--_lumo-text-field-overflow-mask-image);
+      }
+
+      [part="value"]:focus,
+      :host([focused]) [part="input-field"] ::slotted(input),
+      :host([focused]) [part="input-field"] ::slotted(textarea) {
+        -webkit-mask-image: none;
+        mask-image: none;
+      }
+
+      /*
+        TODO: CSS custom property in `mask-image` causes crash in Edge
+        see https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/15415089/
+      */
+      @-moz-document url-prefix() {
+        [part="value"],
+        [part="input-field"] ::slotted(input),
+        [part="input-field"] ::slotted(textarea),
+        [part="input-field"] ::slotted([part="value"]) {
+          mask-image: var(--_lumo-text-field-overflow-mask-image);
+        }
+      }
+
+      [part="value"]::-webkit-input-placeholder {
+        color: inherit;
+        transition: opacity 0.175s 0.05s;
+        opacity: 0.5;
+      }
+
+      [part="value"]:-ms-input-placeholder {
+        color: inherit;
+        opacity: 0.5;
+      }
+
+      [part="value"]::-moz-placeholder {
+        color: inherit;
+        transition: opacity 0.175s 0.05s;
+        opacity: 0.5;
+      }
+
+      [part="value"]::placeholder {
+        color: inherit;
+        transition: opacity 0.175s 0.1s;
+        opacity: 0.5;
+      }
+
+      [part="input-field"] {
+        border-radius: var(--lumo-border-radius);
+        background-color: var(--lumo-contrast-10pct);
+        padding: 0 calc(0.375em + var(--lumo-border-radius) / 4 - 1px);
+        font-weight: 500;
+        line-height: 1;
+        position: relative;
+        cursor: text;
+        box-sizing: border-box;
+      }
+
+      /* Used for hover and activation effects */
+      [part="input-field"]::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        border-radius: inherit;
+        pointer-events: none;
+        background-color: var(--lumo-contrast-50pct);
+        opacity: 0;
+        transition: transform 0.15s, opacity 0.2s;
+        transform-origin: 100% 0;
+      }
+
+      /* Hover */
+
+      :host(:hover:not([readonly]):not([focused])) [part="label"],
+      :host(:hover:not([readonly])) [part="helper-text"],
+      :host(:hover:not([readonly])) [part="helper-text"] ::slotted(*) {
+        color: var(--lumo-body-text-color);
+      }
+
+      :host(:hover:not([readonly]):not([focused])) [part="input-field"]::after {
+        opacity: 0.1;
+      }
+
+      /* Touch device adjustment */
+      @media (pointer: coarse) {
+        :host(:hover:not([readonly]):not([focused])) [part="label"] {
+          color: var(--lumo-secondary-text-color);
+        }
+
+        :host(:hover:not([readonly]):not([focused])) [part="input-field"]::after {
+          opacity: 0;
+        }
+
+        :host(:active:not([readonly]):not([focused])) [part="input-field"]::after {
+          opacity: 0.2;
+        }
+      }
+
+      /* Trigger when not focusing using the keyboard */
+      :host([focused]:not([focus-ring]):not([readonly])) [part="input-field"]::after {
+        transform: scaleX(0);
+        transition-duration: 0.15s, 1s;
+      }
+
+      /* Focus-ring */
+
+      :host([focus-ring]) [part="input-field"] {
+        box-shadow: 0 0 0 2px var(--lumo-primary-color-50pct);
+      }
+
+      /* Read-only and disabled */
+      :host([readonly]) [part="value"]::-webkit-input-placeholder,
+      :host([disabled]) [part="value"]::-webkit-input-placeholder {
+        opacity: 0;
+      }
+
+      :host([readonly]) [part="value"]:-ms-input-placeholder,
+      :host([disabled]) [part="value"]:-ms-input-placeholder {
+        opacity: 0;
+      }
+
+      :host([readonly]) [part="value"]::-moz-placeholder,
+      :host([disabled]) [part="value"]::-moz-placeholder {
+        opacity: 0;
+      }
+
+      :host([readonly]) [part="value"]::placeholder,
+      :host([disabled]) [part="value"]::placeholder {
+        opacity: 0;
+      }
+
+      /* Read-only */
+
+      :host([readonly]) [part="input-field"] {
+        color: var(--lumo-secondary-text-color);
+        background-color: transparent;
+        cursor: default;
+      }
+
+      :host([readonly]) [part="input-field"]::after {
+        background-color: transparent;
+        opacity: 1;
+        border: 1px dashed var(--lumo-contrast-30pct);
+      }
+
+      /* Disabled style */
+
+      :host([disabled]) {
+        pointer-events: none;
+      }
+
+      :host([disabled]) [part="input-field"] {
+        background-color: var(--lumo-contrast-5pct);
+      }
+
+      :host([disabled]) [part="label"],
+      :host([disabled]) [part="helper-text"],
+      :host([disabled]) [part="value"],
+      :host([disabled]) [part="input-field"] ::slotted(*) {
+        color: var(--lumo-disabled-text-color);
+        -webkit-text-fill-color: var(--lumo-disabled-text-color);
+      }
+
+      /* Invalid style */
+
+      :host([invalid]) [part="input-field"] {
+        background-color: var(--lumo-error-color-10pct);
+      }
+
+      :host([invalid]) [part="input-field"]::after {
+        background-color: var(--lumo-error-color-50pct);
+      }
+
+      :host([invalid][focus-ring]) [part="input-field"] {
+        box-shadow: 0 0 0 2px var(--lumo-error-color-50pct);
+      }
+
+      :host([input-prevented]) [part="input-field"] {
+        color: var(--lumo-error-text-color);
+      }
+
+      /* Small theme */
+
+      :host([theme~="small"]) {
+        font-size: var(--lumo-font-size-s);
+        --lumo-text-field-size: var(--lumo-size-s);
+      }
+
+      :host([theme~="small"][has-label]) [part="label"] {
+        font-size: var(--lumo-font-size-xs);
+      }
+
+      :host([theme~="small"][has-label]) [part="error-message"] {
+        font-size: var(--lumo-font-size-xxs);
+      }
+
+      /* Text align */
+
+      :host([theme~="align-left"]) [part="value"] {
+        text-align: left;
+        --_lumo-text-field-overflow-mask-image: none;
+      }
+
+      :host([theme~="align-center"]) [part="value"] {
+        text-align: center;
+        --_lumo-text-field-overflow-mask-image: none;
+      }
+
+      :host([theme~="align-right"]) [part="value"] {
+        text-align: right;
+        --_lumo-text-field-overflow-mask-image: none;
+      }
+
+      @-moz-document url-prefix() {
+        /* Firefox is smart enough to align overflowing text to right */
+        :host([theme~="align-right"]) [part="value"] {
+          --_lumo-text-field-overflow-mask-image: linear-gradient(to right, transparent 0.25em, #000 1.5em);
+        }
+      }
+
+      @-moz-document url-prefix() {
+        /* Firefox is smart enough to align overflowing text to right */
+        :host([theme~="align-left"]) [part="value"] {
+          --_lumo-text-field-overflow-mask-image: linear-gradient(to left, transparent 0.25em, #000 1.5em);
+        }
+      }
+      /* helper-text position */
+
+      :host([has-helper][theme~="helper-above-field"]) [part="helper-text"]::before {
+        display: none;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) [part="helper-text"]::after {
+        content: "";
+        display: block;
+        height: 0.4em;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) [part="label"] {
+        order: 0;
+        padding-bottom: 0.4em;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) [part="helper-text"] {
+        order: 1;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) [part="input-field"] {
+        order: 2;
+      }
+
+      :host([has-helper][theme~="helper-above-field"]) [part="error-message"] {
+        order: 3;
+      }
+
+      /* Slotted content */
+
+      [part="input-field"] ::slotted(:not([part]):not(iron-icon):not(input):not(textarea)) {
+        color: var(--lumo-secondary-text-color);
+        font-weight: 400;
+      }
+
+      /* Slotted icons */
+
+      [part="input-field"] ::slotted(iron-icon) {
+        color: var(--lumo-contrast-60pct);
+        width: var(--lumo-icon-size-m);
+        height: var(--lumo-icon-size-m);
+      }
+
+      /* Vaadin icons are based on a 16x16 grid (unlike Lumo and Material icons with 24x24), so they look too big by default */
+      [part="input-field"] ::slotted(iron-icon[icon^="vaadin:"]) {
+        padding: 0.25em;
+        box-sizing: border-box !important;
+      }
+
+      [part="clear-button"]::before {
+        content: var(--lumo-icons-cross);
+      }
+
+      /* RTL specific styles */
+
+      :host([dir="rtl"]) [part="input-field"]::after {
+        transform-origin: 0% 0;
+      }
+
+      :host([dir="rtl"]) [part="value"],
+      :host([dir="rtl"]) [part="input-field"] ::slotted(input),
+      :host([dir="rtl"]) [part="input-field"] ::slotted(textarea) {
+        --_lumo-text-field-overflow-mask-image: linear-gradient(to right, transparent, #000 1.25em);
+      }
+
+      :host([dir="rtl"]) [part="value"]:focus,
+      :host([focused][dir="rtl"]) [part="input-field"] ::slotted(input),
+      :host([focused][dir="rtl"]) [part="input-field"] ::slotted(textarea) {
+        -webkit-mask-image: none;
+        mask-image: none;
+      }
+
+      @-moz-document url-prefix() {
+        :host([dir="rtl"]) [part="value"],
+        :host([dir="rtl"]) [part="input-field"] ::slotted(input),
+        :host([dir="rtl"]) [part="input-field"] ::slotted(textarea),
+        :host([dir="rtl"]) [part="input-field"] ::slotted([part="value"]) {
+          mask-image: var(--_lumo-text-field-overflow-mask-image);
+        }
+      }
+
+      :host([theme~="align-left"][dir="rtl"]) [part="value"] {
+        --_lumo-text-field-overflow-mask-image: none;
+      }
+
+      :host([theme~="align-center"][dir="rtl"]) [part="value"] {
+        --_lumo-text-field-overflow-mask-image: none;
+      }
+
+      :host([theme~="align-right"][dir="rtl"]) [part="value"] {
+        --_lumo-text-field-overflow-mask-image: none;
+      }
+
+      @-moz-document url-prefix() {
+        /* Firefox is smart enough to align overflowing text to right */
+        :host([theme~="align-right"][dir="rtl"]) [part="value"] {
+          --_lumo-text-field-overflow-mask-image: linear-gradient(to right, transparent 0.25em, #000 1.5em);
+        }
+      }
+
+      @-moz-document url-prefix() {
+        /* Firefox is smart enough to align overflowing text to right */
+        :host([theme~="align-left"][dir="rtl"]) [part="value"] {
+          --_lumo-text-field-overflow-mask-image: linear-gradient(to left, transparent 0.25em, #000 1.5em);
+        }
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="vaadin-text-field-shared-styles">
+  <template>
+    <style>
+      :host {
+        display: inline-flex;
+        outline: none;
+      }
+
+      :host::before {
+        content: "\2003";
+        width: 0;
+        display: inline-block;
+        /* Size and position this element on the same vertical position as the input-field element
+           to make vertical align for the host element work as expected */
+      }
+
+      :host([hidden]) {
+        display: none !important;
+      }
+
+      .vaadin-text-field-container,
+      .vaadin-text-area-container {
+        display: flex;
+        flex-direction: column;
+        min-width: 100%;
+        max-width: 100%;
+        width: var(--vaadin-text-field-default-width, 12em);
+      }
+
+      [part="label"]:empty {
+        display: none;
+      }
+
+      [part="input-field"] {
+        display: flex;
+        align-items: center;
+        flex: auto;
+      }
+
+      .vaadin-text-field-container [part="input-field"] {
+        flex-grow: 0;
+      }
+
+      /* Reset the native input styles */
+      [part="value"],
+      [part="input-field"] ::slotted(input),
+      [part="input-field"] ::slotted(textarea) {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        outline: none;
+        margin: 0;
+        padding: 0;
+        border: 0;
+        border-radius: 0;
+        min-width: 0;
+        font: inherit;
+        font-size: 1em;
+        line-height: normal;
+        color: inherit;
+        background-color: transparent;
+        /* Disable default invalid style in Firefox */
+        box-shadow: none;
+      }
+
+      [part="input-field"] ::slotted(*) {
+        flex: none;
+      }
+
+      [part="value"],
+      [part="input-field"] ::slotted(input),
+      [part="input-field"] ::slotted(textarea),
+      /* Slotted by vaadin-select-text-field */
+      [part="input-field"] ::slotted([part="value"]) {
+        flex: auto;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+      }
+
+      [part="input-field"] ::slotted(textarea) {
+        resize: none;
+      }
+
+      [part="value"]::-ms-clear,
+      [part="input-field"] ::slotted(input)::-ms-clear {
+        display: none;
+      }
+
+      [part="clear-button"] {
+        cursor: default;
+      }
+
+      [part="clear-button"]::before {
+        content: "✕";
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="vaadin-email-field-template">
+  <template>
+    
+  </template>
+  
+</dom-module><dom-module id="lumo-password-field" theme-for="vaadin-password-field">
+  <template>
+    <style>
+      [part="reveal-button"]::before {
+        content: var(--lumo-icons-eye);
+      }
+
+      :host([password-visible]) [part="reveal-button"]::before {
+        content: var(--lumo-icons-eye-disabled);
+      }
+
+      /* Make it easy to hide the button across the whole app */
+      [part="reveal-button"] {
+        display: var(--lumo-password-field-reveal-button-display, block);
+      }
+
+      /* FIXME: ShadyCSS workaround for slotted input in Edge */
+      [part="input-field"] ::slotted(input)::-ms-reveal {
+        display: none;
+      }
+    </style>
+  </template>
+</dom-module><custom-style>
+  <style>@font-face {
+  font-family: 'vaadin-password-field-icons';
+      src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
+      font-weight: normal;
+      font-style: normal;
+}
+
+</style>
+</custom-style><dom-module id="vaadin-password-field-template">
+  <template>
+    
+
+    
+  </template>
+  
+</dom-module><dom-module id="lumo-progress-bar" theme-for="vaadin-progress-bar">
+  <template>
+    <style>
+      :host {
+        height: calc(var(--lumo-size-l) / 10);
+        margin: var(--lumo-space-s) 0;
+      }
+
+      [part="bar"] {
+        border-radius: var(--lumo-border-radius);
+        background-color: var(--lumo-contrast-10pct);
+      }
+
+      [part="value"] {
+        border-radius: var(--lumo-border-radius);
+        background-color: var(--lumo-primary-color);
+        /* Use width instead of transform to preserve border radius */
+        transform: none;
+        width: calc(var(--vaadin-progress-value) * 100%);
+        will-change: width;
+        transition: 0.1s width linear;
+      }
+
+      /* Indeterminate mode */
+
+      :host([indeterminate]) [part="value"] {
+        --lumo-progress-indeterminate-progress-bar-background: linear-gradient(to right, var(--lumo-primary-color-10pct) 10%, var(--lumo-primary-color));
+        --lumo-progress-indeterminate-progress-bar-background-reverse: linear-gradient(to left, var(--lumo-primary-color-10pct) 10%, var(--lumo-primary-color));
+        width: 100%;
+        background-color: transparent !important;
+        background-image: var(--lumo-progress-indeterminate-progress-bar-background);
+        opacity: 0.75;
+        will-change: transform;
+        animation: vaadin-progress-indeterminate 1.6s infinite cubic-bezier(.645, .045, .355, 1);
+      }
+
+      @keyframes vaadin-progress-indeterminate {
+        0% {
+          transform: scaleX(0.015);
+          transform-origin: 0% 0%;
+        }
+
+        25% {
+          transform: scaleX(0.4);
+        }
+
+        50% {
+          transform: scaleX(0.015);
+          transform-origin: 100% 0%;
+          background-image: var(--lumo-progress-indeterminate-progress-bar-background);
+        }
+
+        50.1% {
+          transform: scaleX(0.015);
+          transform-origin: 100% 0%;
+          background-image: var(--lumo-progress-indeterminate-progress-bar-background-reverse);
+        }
+
+        75% {
+          transform: scaleX(0.4);
+        }
+
+        100% {
+          transform: scaleX(0.015);
+          transform-origin: 0% 0%;
+          background-image: var(--lumo-progress-indeterminate-progress-bar-background-reverse);
+        }
+      }
+
+      :host(:not([aria-valuenow])) [part="value"]::before,
+      :host([indeterminate]) [part="value"]::before {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        border-radius: inherit;
+        background-color: var(--lumo-primary-color);
+        will-change: opacity;
+        animation: vaadin-progress-pulse3 1.6s infinite cubic-bezier(.645, .045, .355, 1);
+      }
+
+      @keyframes vaadin-progress-pulse3 {
+        0% { opacity: 1; }
+        10% { opacity: 0; }
+        40% { opacity: 0; }
+        50% { opacity: 1; }
+        50.1% { opacity: 1; }
+        60% { opacity: 0; }
+        90% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+
+      /* Contrast color */
+
+      :host([theme~="contrast"]) [part="value"],
+      :host([theme~="contrast"]) [part="value"]::before {
+        background-color: var(--lumo-contrast-80pct);
+        --lumo-progress-indeterminate-progress-bar-background: linear-gradient(to right, var(--lumo-contrast-5pct) 10%, var(--lumo-contrast-80pct));
+        --lumo-progress-indeterminate-progress-bar-background-reverse: linear-gradient(to left, var(--lumo-contrast-5pct) 10%, var(--lumo-contrast-60pct));
+      }
+
+      /* Error color */
+
+      :host([theme~="error"]) [part="value"],
+      :host([theme~="error"]) [part="value"]::before {
+        background-color: var(--lumo-error-color);
+        --lumo-progress-indeterminate-progress-bar-background: linear-gradient(to right, var(--lumo-error-color-10pct) 10%, var(--lumo-error-color));
+        --lumo-progress-indeterminate-progress-bar-background-reverse: linear-gradient(to left, var(--lumo-error-color-10pct) 10%, var(--lumo-error-color));
+      }
+
+      /* Primary color */
+
+      :host([theme~="success"]) [part="value"],
+      :host([theme~="success"]) [part="value"]::before {
+        background-color: var(--lumo-success-color);
+        --lumo-progress-indeterminate-progress-bar-background: linear-gradient(to right, var(--lumo-success-color-10pct) 10%, var(--lumo-success-color));
+        --lumo-progress-indeterminate-progress-bar-background-reverse: linear-gradient(to left, var(--lumo-success-color-10pct) 10%, var(--lumo-success-color));
+      }
+
+      /* RTL specific styles */
+
+      :host([indeterminate][dir="rtl"]) [part="value"] {
+        --lumo-progress-indeterminate-progress-bar-background: linear-gradient(to left, var(--lumo-primary-color-10pct) 10%, var(--lumo-primary-color));
+        --lumo-progress-indeterminate-progress-bar-background-reverse: linear-gradient(to right, var(--lumo-primary-color-10pct) 10%, var(--lumo-primary-color));
+        animation: vaadin-progress-indeterminate-rtl 1.6s infinite cubic-bezier(.355, .045, .645, 1);
+      }
+
+      :host(:not([aria-valuenow])[dir="rtl"]) [part="value"]::before,
+      :host([indeterminate][dir="rtl"]) [part="value"]::before {
+        animation: vaadin-progress-pulse3 1.6s infinite cubic-bezier(.355, .045, .645, 1);
+      }
+
+      @keyframes vaadin-progress-indeterminate-rtl {
+        0% {
+          transform: scaleX(0.015);
+          transform-origin: 100% 0%;
+        }
+
+        25% {
+          transform: scaleX(0.4);
+        }
+
+        50% {
+          transform: scaleX(0.015);
+          transform-origin: 0% 0%;
+          background-image: var(--lumo-progress-indeterminate-progress-bar-background);
+        }
+
+        50.1% {
+          transform: scaleX(0.015);
+          transform-origin: 0% 0%;
+          background-image: var(--lumo-progress-indeterminate-progress-bar-background-reverse);
+        }
+
+        75% {
+          transform: scaleX(0.4);
+        }
+
+        100% {
+          transform: scaleX(0.015);
+          transform-origin: 100% 0%;
+          background-image: var(--lumo-progress-indeterminate-progress-bar-background-reverse);
+        }
+      }
+
+      /* Contrast color */
+
+      :host([theme~="contrast"][dir="rtl"]) [part="value"],
+      :host([theme~="contrast"][dir="rtl"]) [part="value"]::before {
+        --lumo-progress-indeterminate-progress-bar-background: linear-gradient(to left, var(--lumo-contrast-5pct) 10%, var(--lumo-contrast-80pct));
+        --lumo-progress-indeterminate-progress-bar-background-reverse: linear-gradient(to right, var(--lumo-contrast-5pct) 10%, var(--lumo-contrast-60pct));
+      }
+
+      /* Error color */
+
+      :host([theme~="error"][dir="rtl"]) [part="value"],
+      :host([theme~="error"][dir="rtl"]) [part="value"]::before {
+        --lumo-progress-indeterminate-progress-bar-background: linear-gradient(to left, var(--lumo-error-color-10pct) 10%, var(--lumo-error-color));
+        --lumo-progress-indeterminate-progress-bar-background-reverse: linear-gradient(to right, var(--lumo-error-color-10pct) 10%, var(--lumo-error-color));
+      }
+
+      /* Primary color */
+
+      :host([theme~="success"][dir="rtl"]) [part="value"],
+      :host([theme~="success"][dir="rtl"]) [part="value"]::before {
+        --lumo-progress-indeterminate-progress-bar-background: linear-gradient(to left, var(--lumo-success-color-10pct) 10%, var(--lumo-success-color));
+        --lumo-progress-indeterminate-progress-bar-background-reverse: linear-gradient(to right, var(--lumo-success-color-10pct) 10%, var(--lumo-success-color));
+      }
+    </style>
+  </template>
+</dom-module><custom-style>
+  <style>@keyframes vaadin-progress-pulse3 {
+0% {
+  opacity: 1;
+}
+
+10% {
+  opacity: 0;
+}
+
+40% {
+  opacity: 0;
+}
+
+50% {
+  opacity: 1;
+}
+
+50.1% {
+  opacity: 1;
+}
+
+60% {
+  opacity: 0;
+}
+
+90% {
+  opacity: 0;
+}
+
+100% {
+  opacity: 1;
+}
+
+}
+
+</style>
+</custom-style><dom-module id="lumo-upload" theme-for="vaadin-upload">
+  <template>
+    <style>
+      :host {
+        line-height: var(--lumo-line-height-m);
+      }
+
+      :host(:not([nodrop])) {
+        overflow: hidden;
+        border: 1px dashed var(--lumo-contrast-20pct);
+        border-radius: var(--lumo-border-radius);
+        padding: var(--lumo-space-m);
+        transition: background-color 0.6s, border-color 0.6s;
+      }
+
+      [part="primary-buttons"] > * {
+        display: inline-block;
+        white-space: nowrap;
+      }
+
+      [part="drop-label"] {
+        display: inline-block;
+        white-space: normal;
+        padding: 0 var(--lumo-space-s);
+        color: var(--lumo-secondary-text-color);
+        font-family: var(--lumo-font-family);
+      }
+
+      :host([dragover-valid]) {
+        border-color: var(--lumo-primary-color-50pct);
+        background: var(--lumo-primary-color-10pct);
+        transition: background-color 0.1s, border-color 0.1s;
+      }
+
+      :host([dragover-valid]) [part="drop-label"] {
+        color: var(--lumo-primary-text-color);
+      }
+
+      [part="drop-label-icon"] {
+        display: inline-block;
+      }
+
+      [part="drop-label-icon"]::before {
+        content: var(--lumo-icons-upload);
+        font-family: lumo-icons;
+        font-size: var(--lumo-icon-size-m);
+        line-height: 1;
+        vertical-align: -.25em;
+      }
+    </style>
+  </template>
+</dom-module><dom-module id="lumo-upload-file" theme-for="vaadin-upload-file">
+  <template>
+    <style include="lumo-field-button">
+      :host {
+        padding: var(--lumo-space-s) 0;
+      }
+
+      :host(:not(:first-child)) {
+        border-top: 1px solid var(--lumo-contrast-10pct);
+      }
+
+      [part="row"] {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+      }
+
+      [part="status"],
+      [part="error"] {
+        color: var(--lumo-secondary-text-color);
+        font-size: var(--lumo-font-size-s);
+      }
+
+      [part="info"] {
+        display: flex;
+        align-items: baseline;
+        flex: auto;
+      }
+
+      [part="meta"] {
+        width: 0.001px;
+        flex: 1 1 auto;
+      }
+
+      [part="name"] {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      [part="commands"] {
+        display: flex;
+        align-items: baseline;
+        flex: none;
+      }
+
+      [part="done-icon"],
+      [part="warning-icon"] {
+        margin-right: var(--lumo-space-xs);
+      }
+
+      /* When both icons are hidden, let us keep space for one */
+      [part="done-icon"][hidden] + [part="warning-icon"][hidden] {
+        display: block !important;
+        visibility: hidden;
+      }
+
+      [part="done-icon"],
+      [part="warning-icon"] {
+        font-size: var(--lumo-icon-size-m);
+        font-family: 'lumo-icons';
+        line-height: 1;
+      }
+
+      [part="start-button"],
+      [part="retry-button"],
+      [part="clear-button"] {
+        flex: none;
+        margin-left: var(--lumo-space-xs);
+      }
+
+      [part="done-icon"]::before,
+      [part="warning-icon"]::before,
+      [part="start-button"]::before,
+      [part="retry-button"]::before,
+      [part="clear-button"]::before {
+        vertical-align: -.25em;
+      }
+
+      [part="done-icon"]::before {
+        content: var(--lumo-icons-checkmark);
+        color: var(--lumo-primary-text-color);
+      }
+
+      [part="warning-icon"]::before {
+        content: var(--lumo-icons-error);
+        color: var(--lumo-error-text-color);
+      }
+
+      [part="start-button"]::before {
+        content: var(--lumo-icons-play);
+      }
+
+      [part="retry-button"]::before {
+        content: var(--lumo-icons-reload);
+      }
+
+      [part="clear-button"]::before {
+        content: var(--lumo-icons-cross);
+      }
+
+      [part="error"] {
+        color: var(--lumo-error-text-color);
+      }
+
+      [part="progress"] {
+        width: auto;
+        margin-left: calc(var(--lumo-icon-size-m) + var(--lumo-space-xs));
+        margin-right: calc(var(--lumo-icon-size-m) + var(--lumo-space-xs));
+      }
+
+      [part="progress"][complete],
+      [part="progress"][error] {
+        display: none;
+      }
+
+    </style>
+  </template>
+</dom-module><custom-style>
+  <style>@font-face {
+  font-family: 'vaadin-upload-icons';
+      src: url(data:application/font-woff;charset=utf-8;base64,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) format('woff');
+      font-weight: normal;
+      font-style: normal;
+}
+
+</style>
+</custom-style><style type="text/css">@-webkit-keyframes v-progress-start {0% {width: 0%;}100% {width: 50%;}}@-moz-keyframes v-progress-start {0% {width: 0%;}100% {width: 50%;}}@keyframes v-progress-start {0% {width: 0%;}100% {width: 50%;}}@keyframes v-progress-delay {0% {width: 50%;}100% {width: 90%;}}@keyframes v-progress-wait {0% {width: 90%;height: 4px;}3% {width: 91%;height: 7px;}100% {width: 96%;height: 7px;}}@-webkit-keyframes v-progress-wait-pulse {0% {opacity: 1;}50% {opacity: 0.1;}100% {opacity: 1;}}@-moz-keyframes v-progress-wait-pulse {0% {opacity: 1;}50% {opacity: 0.1;}100% {opacity: 1;}}@keyframes v-progress-wait-pulse {0% {opacity: 1;}50% {opacity: 0.1;}100% {opacity: 1;}}.v-loading-indicator {position: fixed !important;z-index: 99999;left: 0;right: auto;top: 0;width: 50%;opacity: 1;height: 4px;background-color: var(--lumo-primary-color, var(--material-primary-color, blue));pointer-events: none;transition: none;animation: v-progress-start 1000ms 200ms both;}.v-loading-indicator[style*="none"] {display: block !important;width: 100% !important;opacity: 0;animation: none !important;transition: opacity 500ms 300ms, width 300ms;}.v-loading-indicator.second {width: 90%;animation: v-progress-delay 3.8s forwards;}.v-loading-indicator.third {width: 96%;animation: v-progress-wait 5s forwards, v-progress-wait-pulse 1s 4s infinite backwards;}</style></head><body><noscript>You have to enable javascript in your browser to use this web site.</noscript><div class="v-loading-indicator first" style="display: none;"></div><vaadin-vertical-layout theme="padding spacing" style="width: 100%;"><vaadin-form-layout style="margin: 0px auto; max-width: 500px;"><h2 colspan="2" style="width: calc(99.9% + 0rem); margin-left: 0px; margin-right: 0px;">Signup form</h2><vaadin-text-field tabindex="0" required="" has-label="" style="width: calc(49.95% - 0.75rem); margin-left: 0px;"></vaadin-text-field><vaadin-text-field tabindex="0" required="" has-label="" style="width: calc(49.95% - 0.75rem); margin-right: 0px;"></vaadin-text-field><vaadin-text-field tabindex="0" required="" has-label="" style="width: calc(49.95% - 0.75rem); margin-left: 0px;"></vaadin-text-field><vaadin-custom-field colspan="2" has-label="" aria-labelledby="vaadin-custom-field-label-1" style="width: calc(99.9% + 0rem); margin-left: 0px; margin-right: 0px;"><div style="display: flex;"><img hidden="true"><vaadin-upload target="VAADIN/dynamic/resource/0/8736e466-ac84-421c-b2c6-76b143255e39/upload" style="flex-grow: 1;"></vaadin-upload></div></vaadin-custom-field><vaadin-password-field tabindex="0" required="" has-label="" style="width: calc(49.95% - 0.75rem); margin-left: 0px;"></vaadin-password-field><vaadin-password-field tabindex="0" has-label="" style="width: calc(49.95% - 0.75rem); margin-right: 0px;"></vaadin-password-field><vaadin-checkbox tabindex="0" aria-checked="false" role="checkbox" style="padding-top: 10px; width: calc(49.95% - 0.75rem); margin-left: 0px;">Allow Marketing?</vaadin-checkbox><vaadin-email-field hidden="true" tabindex="0"></vaadin-email-field><span colspan="2" style="padding: 15px 0px; color: var(--lumo-error-text-color); width: calc(99.9% + 0rem); margin-left: 0px; margin-right: 0px;"></span><vaadin-button colspan="2" theme="primary" tabindex="0" role="button" style="width: calc(99.9% + 0rem); margin-left: 0px; margin-right: 0px;">Join the community</vaadin-button><style>#styleElement { word-spacing: 490px; }</style></vaadin-form-layout><vaadin-corner></vaadin-corner></vaadin-vertical-layout></body></html>
