@@ -33,6 +33,8 @@ public class DataInDatabaseTest {
         String director = page.movieGrid.get(2).getText();
         String linkText = page.movieGrid.get(3).getText();
 
+        Thread.sleep(2000);
+
         Assertions.assertEquals("Law Abiding Citizen", name);
         Assertions.assertEquals("2009", year);
         Assertions.assertEquals("F. Gardy Gray", director);
