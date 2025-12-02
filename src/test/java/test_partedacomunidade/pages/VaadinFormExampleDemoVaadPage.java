@@ -1,6 +1,5 @@
-package partedacomunidade.pages;
+package test_partedacomunidade.pages;
 
-import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import org.openqa.selenium.By;

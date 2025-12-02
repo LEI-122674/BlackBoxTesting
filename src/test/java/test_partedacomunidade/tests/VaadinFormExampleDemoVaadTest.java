@@ -1,9 +1,8 @@
-package partedacomunidade.tests;
+package test_partedacomunidade.tests;
 
 import com.codeborne.selenide.Configuration;
-import com.codeborne.selenide.Selenide;
 import org.junit.jupiter.api.BeforeEach;
-import partedacomunidade.pages.VaadinFormExampleDemoVaadPage;
+import test_partedacomunidade.pages.VaadinFormExampleDemoVaadPage;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import static com.codeborne.selenide.Condition.*;

@@ -1,4 +1,4 @@
-package adicionarCategoria.pages;
+package test_adicionarCategoria.pages;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.SelenideElement;
 
